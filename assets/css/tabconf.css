@@ -1,6 +1,5 @@
-/* Palette aligned with TABConf 7 (7.tabconf.com/assets/css/style.css):
-   white page, #727272 body, #222 headings, #267CB9 links,
-   sponsor accents #FF9900 (orange) + #54A7D3 (blue). */
+/* TABConf 7–style neutrals: white page, #727272 body, #222 headings, gray chrome.
+   Orange #FF9900 only for the primary Bitcoin CTA (matches 7’s sponsor accent). */
 
 :root {
   --bg: #ffffff;
@@ -11,12 +10,10 @@
   --text-secondary: #393939;
   --text-muted: #727272;
   --text-soft: #494949;
-  --link: #267cb9;
-  --link-hover: #006699;
+  --link: #333333;
+  --link-hover: #111111;
   --accent-orange: #ff9900;
   --accent-orange-dark: #e68a00;
-  --accent-blue: #54a7d3;
-  --accent-blue-dark: #3d8eb9;
   --border: #e5e5e5;
   --border-strong: #e0e0e0;
   --font-sans: "Instrument Sans", system-ui, -apple-system, "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -63,7 +60,7 @@ body {
   left: -9999px;
   top: 0;
   padding: 0.75rem 1rem;
-  background: var(--link);
+  background: var(--text);
   color: #fff;
   font-weight: 600;
   z-index: 200;
@@ -95,7 +92,7 @@ body {
 }
 
 .site-title:hover {
-  color: var(--link);
+  color: var(--text-secondary);
 }
 
 /* Layout */
@@ -122,19 +119,15 @@ body {
   top: 0;
   padding: 1.25rem 1rem 1.25rem 0.75rem;
   margin-top: 1.5rem;
-  border-right: 1px solid var(--border);
-  background: var(--bg-code);
-  border-radius: 0 8px 8px 0;
+  background: var(--bg);
+  border-radius: 8px;
   border: 1px solid var(--border);
-  border-left: 3px solid var(--accent-blue);
 }
 
 @media (max-width: 860px) {
   .sidebar {
     position: static;
     margin-top: 0;
-    border-radius: 8px;
-    border-left-width: 3px;
     padding: 1rem 1rem 1.1rem;
   }
 }
@@ -146,7 +139,7 @@ body {
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.12em;
-  color: var(--accent-blue-dark);
+  color: var(--text-soft);
 }
 
 .sidebar__nav {
@@ -175,15 +168,15 @@ body {
 }
 
 .sidebar__link:hover {
-  color: var(--link);
-  background: rgba(38, 124, 185, 0.06);
+  color: var(--text);
+  background: var(--bg-panel);
 }
 
 .sidebar__link.is-active {
   color: var(--text);
   font-weight: 600;
   border-left-color: var(--accent-orange);
-  background: rgba(255, 153, 0, 0.08);
+  background: var(--bg-subtle);
 }
 
 .sidebar__rule {
@@ -239,12 +232,12 @@ body {
 
 .site-main a {
   color: var(--link);
-  text-decoration: none;
+  text-decoration: underline;
+  text-underline-offset: 0.18em;
 }
 
 .site-main a:hover {
   color: var(--link-hover);
-  font-weight: 700;
 }
 
 .site-main hr {
@@ -293,14 +286,14 @@ body {
   font-weight: 700;
 }
 
-/* Home hero */
+/* Home hero — white card, gray border only (no tinted panel) */
 .home-hero {
   text-align: center;
   margin-bottom: 2.5rem;
   padding: 1.5rem 1rem 0.5rem;
-  background: var(--bg-subtle);
+  background: var(--bg);
   border: 1px solid var(--border);
-  border-radius: 12px;
+  border-radius: 8px;
 }
 
 .home-hero__dates {
@@ -390,7 +383,7 @@ body {
   border-top: 1px solid var(--border);
   padding: 1.75rem 1.5rem 2.5rem;
   margin-top: 0;
-  background: var(--bg-code);
+  background: var(--bg);
 }
 
 .site-footer__inner {
@@ -412,13 +405,13 @@ body {
 }
 
 .site-footer__past a {
-  color: var(--link);
+  color: var(--text-muted);
   text-decoration: none;
   font-weight: 500;
   margin-right: 0.55rem;
 }
 
 .site-footer__past a:hover {
-  color: var(--link-hover);
-  font-weight: 700;
+  color: var(--text);
+  text-decoration: underline;
 }
