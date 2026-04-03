@@ -1,15 +1,26 @@
+/* Palette aligned with TABConf 7 (7.tabconf.com/assets/css/style.css):
+   white page, #727272 body, #222 headings, #267CB9 links,
+   sponsor accents #FF9900 (orange) + #54A7D3 (blue). */
+
 :root {
-  --bg: #0a1628;
-  --bg-panel: #0f1f35;
-  --text: #e8edf4;
-  --text-muted: #94a3b8;
-  --accent: #f97316;
-  --accent-muted: #c2410c;
-  --link: #5eead4;
-  --link-hover: #99f6e4;
-  --border: rgba(255, 255, 255, 0.1);
-  --font-sans: "Instrument Sans", system-ui, -apple-system, sans-serif;
-  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+  --bg: #ffffff;
+  --bg-subtle: #fafafa;
+  --bg-panel: #f4f4f4;
+  --bg-code: #f8f8f8;
+  --text: #222222;
+  --text-secondary: #393939;
+  --text-muted: #727272;
+  --text-soft: #494949;
+  --link: #267cb9;
+  --link-hover: #006699;
+  --accent-orange: #ff9900;
+  --accent-orange-dark: #e68a00;
+  --accent-blue: #54a7d3;
+  --accent-blue-dark: #3d8eb9;
+  --border: #e5e5e5;
+  --border-strong: #e0e0e0;
+  --font-sans: "Instrument Sans", system-ui, -apple-system, "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, Monaco, Consolas, monospace;
   --max: 1180px;
   --sidebar-w: 220px;
 }
@@ -30,7 +41,7 @@ body {
   font-family: var(--font-sans);
   font-size: 1.0625rem;
   line-height: 1.65;
-  color: var(--text);
+  color: var(--text-muted);
   background: var(--bg);
   -webkit-font-smoothing: antialiased;
 }
@@ -52,8 +63,8 @@ body {
   left: -9999px;
   top: 0;
   padding: 0.75rem 1rem;
-  background: var(--accent);
-  color: #0a1628;
+  background: var(--link);
+  color: #fff;
   font-weight: 600;
   z-index: 200;
 }
@@ -63,10 +74,10 @@ body {
   top: 1rem;
 }
 
-/* Header — text only, no logo */
+/* Header */
 .site-header {
   border-bottom: 1px solid var(--border);
-  background: var(--bg-panel);
+  background: var(--bg);
 }
 
 .site-header__inner {
@@ -87,7 +98,7 @@ body {
   color: var(--link);
 }
 
-/* Layout: sidebar + main */
+/* Layout */
 .layout {
   max-width: var(--max);
   margin: 0 auto;
@@ -109,36 +120,39 @@ body {
 .sidebar {
   position: sticky;
   top: 0;
-  padding-top: 1.5rem;
+  padding: 1.25rem 1rem 1.25rem 0.75rem;
+  margin-top: 1.5rem;
   border-right: 1px solid var(--border);
-  padding-right: 1.25rem;
-  margin-right: 0;
+  background: var(--bg-code);
+  border-radius: 0 8px 8px 0;
+  border: 1px solid var(--border);
+  border-left: 3px solid var(--accent-blue);
 }
 
 @media (max-width: 860px) {
   .sidebar {
     position: static;
-    border-right: none;
-    border-bottom: 1px solid var(--border);
-    padding: 1rem 0 1.25rem;
-    padding-right: 0;
+    margin-top: 0;
+    border-radius: 8px;
+    border-left-width: 3px;
+    padding: 1rem 1rem 1.1rem;
   }
 }
 
 .sidebar__heading {
   margin: 0 0 0.75rem;
   font-family: var(--font-mono);
-  font-size: 0.7rem;
-  font-weight: 500;
+  font-size: 0.68rem;
+  font-weight: 600;
   text-transform: uppercase;
-  letter-spacing: 0.14em;
-  color: var(--text-muted);
+  letter-spacing: 0.12em;
+  color: var(--accent-blue-dark);
 }
 
 .sidebar__nav {
   display: flex;
   flex-direction: column;
-  gap: 0.15rem;
+  gap: 0.1rem;
 }
 
 @media (max-width: 860px) {
@@ -151,21 +165,25 @@ body {
 
 .sidebar__link {
   display: block;
-  padding: 0.35rem 0;
+  padding: 0.35rem 0.35rem 0.35rem 0.5rem;
   font-size: 0.9375rem;
   font-weight: 500;
   color: var(--text-muted);
   text-decoration: none;
   border-radius: 4px;
+  border-left: 2px solid transparent;
 }
 
 .sidebar__link:hover {
   color: var(--link);
+  background: rgba(38, 124, 185, 0.06);
 }
 
 .sidebar__link.is-active {
   color: var(--text);
   font-weight: 600;
+  border-left-color: var(--accent-orange);
+  background: rgba(255, 153, 0, 0.08);
 }
 
 .sidebar__rule {
@@ -188,20 +206,21 @@ body {
   padding-top: 1.5rem;
 }
 
-/* Main content typography */
+/* Main typography (TABConf 7 weights) */
 .site-main h1 {
   font-size: clamp(1.65rem, 4vw, 2.15rem);
   font-weight: 700;
   letter-spacing: -0.03em;
   line-height: 1.2;
   margin: 0 0 1.25rem;
+  color: var(--text);
 }
 
 .site-main h2 {
   font-size: 1.2rem;
   font-weight: 600;
   margin: 2rem 0 0.85rem;
-  color: var(--text);
+  color: var(--text-secondary);
   letter-spacing: -0.02em;
 }
 
@@ -209,7 +228,7 @@ body {
   font-size: 1.05rem;
   font-weight: 600;
   margin: 1.5rem 0 0.6rem;
-  color: var(--text);
+  color: var(--text-soft);
 }
 
 .site-main p {
@@ -220,12 +239,12 @@ body {
 
 .site-main a {
   color: var(--link);
-  text-decoration: underline;
-  text-underline-offset: 0.2em;
+  text-decoration: none;
 }
 
 .site-main a:hover {
   color: var(--link-hover);
+  font-weight: 700;
 }
 
 .site-main hr {
@@ -249,6 +268,7 @@ body {
 
 .site-main strong {
   color: var(--text);
+  font-weight: 700;
 }
 
 .site-main table {
@@ -268,25 +288,28 @@ body {
 }
 
 .site-main th {
-  background: var(--bg-panel);
+  background: var(--bg-code);
   color: var(--text);
-  font-weight: 600;
+  font-weight: 700;
 }
 
-/* Home hero — logo once, centered */
+/* Home hero */
 .home-hero {
   text-align: center;
   margin-bottom: 2.5rem;
-  padding-bottom: 0.5rem;
+  padding: 1.5rem 1rem 0.5rem;
+  background: var(--bg-subtle);
+  border: 1px solid var(--border);
+  border-radius: 12px;
 }
 
 .home-hero__dates {
   margin: 0 0 1.25rem;
   font-family: var(--font-mono);
-  font-size: clamp(0.95rem, 2.5vw, 1.05rem);
+  font-size: clamp(0.9rem, 2.2vw, 1rem);
   font-weight: 500;
-  color: var(--text);
-  letter-spacing: 0.04em;
+  color: var(--text-secondary);
+  letter-spacing: 0.06em;
 }
 
 .home-hero__logo {
@@ -304,6 +327,7 @@ body {
   justify-content: center;
   align-items: center;
   margin-top: 0.25rem;
+  padding-bottom: 0.5rem;
 }
 
 .ticket-actions__btn {
@@ -311,16 +335,15 @@ body {
   align-items: center;
   justify-content: center;
   min-width: 200px;
-  padding: 0.9rem 1.5rem;
-  border-radius: 8px;
-  font-weight: 600;
-  font-size: 1rem;
+  padding: 0.85rem 1.45rem;
+  border-radius: 6px;
+  font-weight: 700;
+  font-size: 0.98rem;
   text-decoration: none !important;
-  transition: opacity 0.15s ease, transform 0.15s ease;
+  transition: background 0.15s ease, border-color 0.15s ease, transform 0.12s ease;
 }
 
 .ticket-actions__btn:hover {
-  opacity: 0.92;
   transform: translateY(-1px);
 }
 
@@ -328,16 +351,31 @@ body {
   transform: translateY(0);
 }
 
+/* TABConf 7–style orange (title sponsor) for BTC */
 .ticket-actions__btn--btc {
-  background: var(--accent);
+  background: var(--accent-orange);
   color: #fff;
-  box-shadow: 0 2px 0 var(--accent-muted);
+  border: 2px solid var(--accent-orange);
+  box-shadow: 0 1px 0 var(--accent-orange-dark);
 }
 
+.ticket-actions__btn--btc:hover {
+  background: var(--accent-orange-dark);
+  border-color: var(--accent-orange-dark);
+  color: #fff;
+}
+
+/* Light bar like 7’s “downloads” strip for fiat */
 .ticket-actions__btn--fiat {
-  background: #fff;
-  color: #0a1628;
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: var(--bg-panel);
+  color: #444;
+  border: 1px solid var(--border-strong);
+}
+
+.ticket-actions__btn--fiat:hover {
+  background: #eaeaea;
+  border-color: #ccc;
+  color: #222;
 }
 
 @media (max-width: 480px) {
@@ -352,7 +390,7 @@ body {
   border-top: 1px solid var(--border);
   padding: 1.75rem 1.5rem 2.5rem;
   margin-top: 0;
-  background: var(--bg-panel);
+  background: var(--bg-code);
 }
 
 .site-footer__inner {
@@ -374,11 +412,13 @@ body {
 }
 
 .site-footer__past a {
-  color: var(--text-muted);
+  color: var(--link);
   text-decoration: none;
+  font-weight: 500;
   margin-right: 0.55rem;
 }
 
 .site-footer__past a:hover {
-  color: var(--link);
+  color: var(--link-hover);
+  font-weight: 700;
 }
