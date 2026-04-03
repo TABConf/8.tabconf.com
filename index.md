@@ -5,7 +5,6 @@ description: TABConf 8 — a forum for Bitcoin protocol and application develope
 ---
 
 <div class="hero">
-<<<<<<< HEAD
   <img
     class="hero__logo"
     src="{{ '/assets/TABConf8_Logo.png' | relative_url }}"
@@ -14,8 +13,6 @@ description: TABConf 8 — a forum for Bitcoin protocol and application develope
     alt="TABConf 8 — keyboard key artwork with TAB and 8"
     decoding="async"
     fetchpriority="high">
-=======
->>>>>>> 4ac922691b799fe64564487ca0b56b10c5c2ac0e
   <p class="hero__eyebrow">The technical bitcoin conference</p>
   <h1>Mission</h1>
   <p class="hero__lead">TABConf’s mission is to create a forum for protocol and application developers to collaborate, debate, and innovate on Bitcoin.</p>
