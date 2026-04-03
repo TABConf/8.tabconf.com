@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% if page.title %}{{ page.title }} · {% endif %}{{ site.title }}</title>
+  <meta name="description" content="{{ page.description | default: site.description }}">
+  <meta name="theme-color" content="#0c0d10">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ '/assets/css/tabconf.css' | relative_url }}">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="page-bg" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <div class="site-header__inner">
+      <a class="site-logo" href="{{ '/' | relative_url }}">
+        <span class="site-logo__mark">TAB</span><span class="site-logo__rest">Conf</span>
+        <span class="site-logo__year">8</span>
+      </a>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="{{ '/' | relative_url }}">Mission</a>
+        <a href="{{ '/history' | relative_url }}">History</a>
+        <a href="{{ '/about' | relative_url }}">About</a>
+        <a class="site-nav__cta" href="https://checkout.opennode.com/p/7d51f71f-f3e6-4159-bbfa-3a231d14e5b8" rel="noopener noreferrer" target="_blank">Tickets</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="site-main">
+    {{ content }}
+  </main>
+
+  <footer class="site-footer">
+    <div class="site-footer__inner">
+      <p class="site-footer__tagline">Technical · Accessible · Bitcoin · Community</p>
+      <p class="site-footer__past">
+        Past editions:
+        <a href="https://7.tabconf.com/">7</a>
+        <a href="https://6.tabconf.com/">6</a>
+        <a href="https://2023.tabconf.com/">2023</a>
+        <a href="https://2022.tabconf.com/">2022</a>
+        <a href="https://2021.tabconf.com/">2021</a>
+        <a href="https://2020.tabconf.com/">2020</a>
+        <a href="https://2019.tabconf.com/">2019</a>
+        <a href="https://2018.tabconf.com/">2018</a>
+      </p>
+    </div>
+  </footer>
+</body>
+</html>
