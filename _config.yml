@@ -1,4 +1,8 @@
 title: TABConf 8
-description: TABConf 8 landing page
-theme: minima
+description: >-
+  TABConf is a technical Bitcoin conference — protocol and application
+  developers collaborating, debating, and building in Atlanta.
+url: "https://8.tabconf.com"
+baseurl: ""
+permalink: pretty
 markdown: kramdown
