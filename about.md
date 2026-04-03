@@ -1,17 +1,13 @@
 ---
 layout: default
 title: About
-description: Organizers and ethos behind TABConf 8.
+description: TABConf 8 — grassroots technical Bitcoin conference in Atlanta.
 ---
 
 # About TABConf 8
 
-TABConf is volunteer-driven and community-first. This site is the landing place for **TABConf 8** — same ethos as past editions: deep technical content, open participation, and room for debate and collaboration.
+TABConf is **volunteer-driven** and **community-first**: technical content, open participation, and real debate — not a pay-to-play hype fest.
 
-For the full origin story and year-by-year notes, see [History]({{ '/history' | relative_url }}).
+This site covers **TABConf 8** (Oct 12–15, 2026, Atlanta). For story and lineage, see [History]({{ '/history/' | relative_url }}). For logistics, use the sidebar: [Venue]({{ '/venue/' | relative_url }}), [Hotels]({{ '/hotels/' | relative_url }}), [FAQ]({{ '/faq/' | relative_url }}).
 
-### Quick links
-
-- [Mission & tickets]({{ '/' | relative_url }})
-- [Pay with BTC (OpenNode)](https://checkout.opennode.com/p/7d51f71f-f3e6-4159-bbfa-3a231d14e5b8)
-- [TABConf 7](https://7.tabconf.com/) (previous edition)
+**Community:** [tabconf.com](https://tabconf.com/) · [Linktree / socials](https://linktr.ee/tabconf) · [X @tabconf](https://x.com/tabconf)

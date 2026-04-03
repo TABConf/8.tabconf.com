@@ -1,0 +1,17 @@
+<aside class="sidebar" aria-label="Attendee information">
+  <p class="sidebar__heading">Attendees</p>
+  <nav class="sidebar__nav">
+    <a class="sidebar__link{% if page.url == '/' or page.url == '/index.html' %} is-active{% endif %}" href="{{ '/' | relative_url }}">Home</a>
+    <a class="sidebar__link{% if page.url contains '/schedule' %} is-active{% endif %}" href="{{ '/schedule/' | relative_url }}">Schedule</a>
+    <a class="sidebar__link{% if page.url contains '/venue' %} is-active{% endif %}" href="{{ '/venue/' | relative_url }}">Venue &amp; format</a>
+    <a class="sidebar__link{% if page.url contains '/hotels' %} is-active{% endif %}" href="{{ '/hotels/' | relative_url }}">Hotels</a>
+    <a class="sidebar__link{% if page.url contains '/grants' %} is-active{% endif %}" href="{{ '/grants/' | relative_url }}">Grants</a>
+    <a class="sidebar__link{% if page.url contains '/ctb' %} is-active{% endif %}" href="{{ '/ctb/' | relative_url }}">Capture the Bitcoin</a>
+    <a class="sidebar__link{% if page.url contains '/faq' %} is-active{% endif %}" href="{{ '/faq/' | relative_url }}">FAQ</a>
+    <a class="sidebar__link{% if page.url contains '/submit' %} is-active{% endif %}" href="{{ '/submit/' | relative_url }}">Submit a talk</a>
+    <a class="sidebar__link{% if page.url contains '/sponsors' %} is-active{% endif %}" href="{{ '/sponsors/' | relative_url }}">Sponsors</a>
+    <span class="sidebar__rule" role="separator"></span>
+    <a class="sidebar__link{% if page.url contains '/about' %} is-active{% endif %}" href="{{ '/about/' | relative_url }}">About</a>
+    <a class="sidebar__link{% if page.url contains '/history' %} is-active{% endif %}" href="{{ '/history/' | relative_url }}">History</a>
+  </nav>
+</aside>

@@ -1,6 +1,6 @@
 ---
 layout: default
-title: What is TABConf?
+title: History
 description: How TABConf started and grew — grassroots technical Bitcoin in Atlanta.
 ---
 
@@ -18,15 +18,15 @@ After **2020** threw curveballs for everyone, TABConf returned in **2021** with 
 
 ## Highlights by year
 
-<ul class="timeline">
-  <li><span class="timeline__year">8</span><span>TABConf 8 — you are here.</span></li>
-  <li><span class="timeline__year">7</span><span>Atlanta — mission-driven technical gathering.</span></li>
-  <li><span class="timeline__year">6</span><span>Focused on Taproot; added a hardware angle to the conference.</span></li>
-  <li><span class="timeline__year">2023</span><span>Focused on Lightning; organized more of the conference on GitHub.</span></li>
-  <li><span class="timeline__year">2022</span><span>Introduced Builder Days; expanded to four days.</span></li>
-  <li><span class="timeline__year">2021</span><span>Introduced DEF CON–style Villages.</span></li>
-  <li><span class="timeline__year">2019</span><span>In-depth technical workshops.</span></li>
-  <li><span class="timeline__year">2018</span><span>The first TABConf.</span></li>
-</ul>
+| Year | Notes |
+|------|--------|
+| 8 | TABConf 8 — Oct 12–15, 2026, Atlanta. |
+| 7 | Georgia Tech Exhibition Hall; mission-driven technical gathering. |
+| 6 | Taproot focus; hardware angle. |
+| 2023 | Lightning focus; more organization on GitHub. |
+| 2022 | Builder Days; four days. |
+| 2021 | DEF CON–style Villages. |
+| 2019 | In-depth technical workshops. |
+| 2018 | The first TABConf. |
 
 Past sites: [6](https://6.tabconf.com/), [2023](https://2023.tabconf.com/), [2022](https://2022.tabconf.com/), [2021](https://2021.tabconf.com/), [2020](https://2020.tabconf.com/), [2019](https://2019.tabconf.com/), [2018](https://2018.tabconf.com/).
