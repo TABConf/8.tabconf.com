@@ -22,7 +22,7 @@ description: TABConf 8 — October 12–15, 2026 · Atlanta. Technical Bitcoin c
 
 ## When you’re here
 
-- **Oct 12–13** — Builder Days &amp; workshops (hands-on building and deep dives).
+- **Oct 12–13** — Builder Days &amp; workshops (hands-on building and deep dive workshops).
 - **Oct 14–15** — Conference sessions (villages, main stage, and community-led programming).
 
 Venue: **[Georgia Tech Exhibition Hall]({{ '/venue/' | relative_url }})**. Need a room? See **[Hotels]({{ '/hotels/' | relative_url }})** (options near the venue; book directly with properties).
