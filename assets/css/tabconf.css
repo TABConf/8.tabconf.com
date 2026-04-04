@@ -468,14 +468,21 @@ body {
 
 .ticket-actions__btn--btc {
   background: linear-gradient(180deg, var(--accent-orange) 0%, var(--accent-orange-dark) 100%);
-  color: #0c0a08;
+  color: #ffffff;
   border: 1px solid rgba(251, 191, 36, 0.35);
   box-shadow: 0 0 24px rgba(245, 158, 11, 0.2);
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
 }
 
 .ticket-actions__btn--btc:hover {
   box-shadow: 0 0 32px rgba(245, 158, 11, 0.28);
-  color: #0c0a08;
+  color: #ffffff;
+}
+
+/* Beat .site-main a link color when tickets sit in main content */
+.site-main a.ticket-actions__btn--btc,
+.site-main a.ticket-actions__btn--btc:hover {
+  color: #ffffff;
 }
 
 .ticket-actions__btn--fiat {
