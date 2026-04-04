@@ -1,0 +1,81 @@
+{%- comment -%}
+  TEMPORARY satellite promo strip. To retire after events:
+  1. Remove the satellite-events-strip include from _layouts/default.html
+  2. Delete this file
+  3. Remove the Satellite events strip (temporary) block from assets/css/tabconf.css
+{%- endcomment -%}
+<aside class="satellite-strip" aria-label="Upcoming TABConf satellite events">
+  <div class="satellite-strip__inner">
+    <p class="satellite-strip__eyebrow">Also coming up</p>
+    <div class="satellite-strip__grid">
+      <a
+        class="satellite-card satellite-card--vegas"
+        href="https://vegas.tabconf.com/"
+        rel="noopener noreferrer"
+        target="_blank">
+        <div class="satellite-card__art satellite-card__art--vegas" aria-hidden="true">
+          <svg class="satellite-card__svg" viewBox="0 0 120 72" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <linearGradient id="sv-sky" x1="60" y1="0" x2="60" y2="72" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#1a0a2e"/>
+                <stop offset="0.45" stop-color="#2d1b4e"/>
+                <stop offset="1" stop-color="#0c0e11"/>
+              </linearGradient>
+              <linearGradient id="sv-neon" x1="0" y1="36" x2="120" y2="36" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#ec4899" stop-opacity="0.9"/>
+                <stop offset="0.5" stop-color="#22d3ee" stop-opacity="0.85"/>
+                <stop offset="1" stop-color="#a855f7" stop-opacity="0.9"/>
+              </linearGradient>
+            </defs>
+            <rect width="120" height="72" fill="url(#sv-sky)"/>
+            <path d="M0 58 L120 58 L120 72 L0 72 Z" fill="#0a0c0f"/>
+            <path d="M8 58 L8 38 L14 38 L14 58 M18 58 L18 32 L26 32 L26 58 M30 58 L30 40 L38 40 L38 58" stroke="url(#sv-neon)" stroke-width="1.2" stroke-linecap="round" opacity="0.85"/>
+            <path d="M42 58 L42 28 L50 22 L58 28 L58 58" stroke="#f472b6" stroke-width="1.2" fill="none" opacity="0.9"/>
+            <path d="M62 58 L62 34 L72 34 L72 58 M76 58 L76 30 L88 30 L88 58 M92 58 L92 36 L100 36 L100 58 M104 58 L104 42 L112 42 L112 58" stroke="url(#sv-neon)" stroke-width="1.1" stroke-linecap="round" opacity="0.75"/>
+            <line x1="0" y1="56" x2="120" y2="56" stroke="url(#sv-neon)" stroke-width="0.75" opacity="0.5"/>
+          </svg>
+        </div>
+        <div class="satellite-card__body">
+          <h2 class="satellite-card__title">TABConf Vegas</h2>
+          <p class="satellite-card__meta">Sunday, April 26, 2026 · One day · The Sunday before Bitcoin Conference</p>
+          <span class="satellite-card__url">vegas.tabconf.com</span>
+        </div>
+      </a>
+      <a
+        class="satellite-card satellite-card--london"
+        href="https://london.tabconf.com/"
+        rel="noopener noreferrer"
+        target="_blank">
+        <div class="satellite-card__art satellite-card__art--london" aria-hidden="true">
+          <svg class="satellite-card__svg" viewBox="0 0 120 72" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <linearGradient id="ld-sky" x1="60" y1="0" x2="60" y2="72" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#0f172a"/>
+                <stop offset="0.55" stop-color="#1e293b"/>
+                <stop offset="1" stop-color="#0c0e11"/>
+              </linearGradient>
+              <linearGradient id="ld-gold" x1="0" y1="0" x2="120" y2="0" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#94a3b8" stop-opacity="0.35"/>
+                <stop offset="0.5" stop-color="#fbbf24" stop-opacity="0.55"/>
+                <stop offset="1" stop-color="#94a3b8" stop-opacity="0.35"/>
+              </linearGradient>
+            </defs>
+            <rect width="120" height="72" fill="url(#ld-sky)"/>
+            <path d="M0 60 C28 54 52 58 60 52 C72 44 88 50 120 46 L120 72 L0 72 Z" fill="#080a0d" opacity="0.85"/>
+            <path d="M52 60 L52 28 L56 24 L60 28 L60 60 M58 32 L62 32" stroke="url(#ld-gold)" stroke-width="1.1" stroke-linecap="round" fill="none" opacity="0.95"/>
+            <path d="M38 60 L38 44 L42 40 L46 44 L46 60 M40 44 L44 44" stroke="#64748b" stroke-width="1" fill="none" opacity="0.8"/>
+            <path d="M74 60 L74 42 L82 38 L90 42 L90 60" stroke="#64748b" stroke-width="1" fill="none" opacity="0.75"/>
+            <path d="M32 48 L88 48" stroke="url(#ld-gold)" stroke-width="0.9" stroke-linecap="round" opacity="0.45"/>
+            <circle cx="98" cy="18" r="3" fill="#fbbf24" opacity="0.2"/>
+            <circle cx="98" cy="18" r="1.2" fill="#fde68a" opacity="0.5"/>
+          </svg>
+        </div>
+        <div class="satellite-card__body">
+          <h2 class="satellite-card__title">TABConf London</h2>
+          <p class="satellite-card__meta">June 5–7, 2026</p>
+          <span class="satellite-card__url">london.tabconf.com</span>
+        </div>
+      </a>
+    </div>
+  </div>
+</aside>
