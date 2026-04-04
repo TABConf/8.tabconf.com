@@ -270,6 +270,7 @@ body {
 }
 
 .satellite-card--vegas {
+  grid-template-columns: minmax(0, 80px) minmax(0, 1fr);
   border-left: 2px solid rgba(236, 72, 153, 0.45);
 }
 
@@ -293,10 +294,34 @@ body {
   flex-shrink: 0;
 }
 
+.satellite-card__art--vegas {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.3rem;
+  background: var(--bg-elevated);
+}
+
+.satellite-card__art--vegas .satellite-card__img {
+  width: auto;
+  height: auto;
+  max-width: 68%;
+  max-height: 68%;
+  object-fit: contain;
+}
+
 .satellite-card__svg {
   display: block;
   width: 100%;
   height: 100%;
+}
+
+.satellite-card__img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
 }
 
 .satellite-card__body {
@@ -336,6 +361,10 @@ body {
     grid-template-columns: minmax(0, 88px) minmax(0, 1fr);
     gap: 0.65rem;
     padding: 0.65rem 0.75rem;
+  }
+
+  .satellite-card--vegas {
+    grid-template-columns: minmax(0, 70px) minmax(0, 1fr);
   }
 
   .satellite-card__title {
