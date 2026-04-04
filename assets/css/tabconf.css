@@ -1,22 +1,26 @@
-/* TABConf 7–style neutrals: white page, #727272 body, #222 headings, gray chrome.
-   Orange #FF9900 only for the primary Bitcoin CTA (matches 7’s sponsor accent). */
+/* Dark “hacker / terminal” theme: charcoal base, phosphor-green links,
+   amber Bitcoin CTA. Contrast tuned for long reading, not neon overload. */
 
 :root {
-  --bg: #ffffff;
-  --bg-subtle: #fafafa;
-  --bg-panel: #f4f4f4;
-  --bg-code: #f8f8f8;
-  --text: #222222;
-  --text-secondary: #393939;
-  --text-muted: #727272;
-  --text-soft: #494949;
-  --link: #333333;
-  --link-hover: #111111;
-  --accent-orange: #ff9900;
-  --accent-orange-dark: #e68a00;
-  --border: #e5e5e5;
-  --border-strong: #e0e0e0;
-  --font-sans: "Instrument Sans", system-ui, -apple-system, "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --bg: #0c0e11;
+  --bg-deep: #080a0c;
+  --bg-elevated: #12161c;
+  --bg-panel: #161c24;
+  --bg-hover: #1c242e;
+  --text: #e6eaef;
+  --text-secondary: #b8c0cc;
+  --text-muted: #8b95a5;
+  --text-dim: #6b7280;
+  --link: #6ee7a8;
+  --link-hover: #a7f3c8;
+  --accent-terminal: #22c55e;
+  --accent-orange: #f59e0b;
+  --accent-orange-bright: #fbbf24;
+  --accent-orange-dark: #d97706;
+  --border: rgba(255, 255, 255, 0.07);
+  --border-strong: rgba(255, 255, 255, 0.12);
+  --glow-green: rgba(34, 197, 94, 0.12);
+  --font-sans: "Instrument Sans", system-ui, -apple-system, sans-serif;
   --font-mono: "JetBrains Mono", ui-monospace, Monaco, Consolas, monospace;
   --max: 1180px;
   --sidebar-w: 220px;
@@ -39,7 +43,11 @@ body {
   font-size: 1.0625rem;
   line-height: 1.65;
   color: var(--text-muted);
-  background: var(--bg);
+  background: var(--bg-deep);
+  background-image:
+    radial-gradient(ellipse 120% 80% at 50% -40%, rgba(34, 197, 94, 0.07), transparent 55%),
+    radial-gradient(ellipse 70% 50% at 100% 0%, rgba(245, 158, 11, 0.04), transparent 45%);
+  background-attachment: fixed;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -60,8 +68,8 @@ body {
   left: -9999px;
   top: 0;
   padding: 0.75rem 1rem;
-  background: var(--text);
-  color: #fff;
+  background: var(--accent-terminal);
+  color: var(--bg-deep);
   font-weight: 600;
   z-index: 200;
 }
@@ -74,7 +82,8 @@ body {
 /* Header */
 .site-header {
   border-bottom: 1px solid var(--border);
-  background: var(--bg);
+  background: rgba(12, 14, 17, 0.92);
+  backdrop-filter: blur(12px);
 }
 
 .site-header__inner {
@@ -89,10 +98,11 @@ body {
   letter-spacing: -0.02em;
   color: var(--text);
   text-decoration: none;
+  font-family: var(--font-mono);
 }
 
 .site-title:hover {
-  color: var(--text-secondary);
+  color: var(--link);
 }
 
 /* Layout */
@@ -116,12 +126,14 @@ body {
 
 .sidebar {
   position: sticky;
-  top: 0;
-  padding: 1.25rem 1rem 1.25rem 0.75rem;
+  top: 0.75rem;
+  padding: 1.2rem 1rem 1.2rem 0.75rem;
   margin-top: 1.5rem;
-  background: var(--bg);
+  background: var(--bg-panel);
   border-radius: 8px;
   border: 1px solid var(--border);
+  border-left: 2px solid rgba(34, 197, 94, 0.45);
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.35), inset 0 1px 0 rgba(255, 255, 255, 0.04);
 }
 
 @media (max-width: 860px) {
@@ -135,11 +147,11 @@ body {
 .sidebar__heading {
   margin: 0 0 0.75rem;
   font-family: var(--font-mono);
-  font-size: 0.68rem;
+  font-size: 0.65rem;
   font-weight: 600;
   text-transform: uppercase;
-  letter-spacing: 0.12em;
-  color: var(--text-soft);
+  letter-spacing: 0.16em;
+  color: var(--accent-terminal);
 }
 
 .sidebar__nav {
@@ -168,15 +180,15 @@ body {
 }
 
 .sidebar__link:hover {
-  color: var(--text);
-  background: var(--bg-panel);
+  color: var(--text-secondary);
+  background: var(--bg-hover);
 }
 
 .sidebar__link.is-active {
   color: var(--text);
   font-weight: 600;
-  border-left-color: var(--accent-orange);
-  background: var(--bg-subtle);
+  border-left-color: var(--accent-orange-bright);
+  background: rgba(245, 158, 11, 0.08);
 }
 
 .sidebar__rule {
@@ -199,7 +211,7 @@ body {
   padding-top: 1.5rem;
 }
 
-/* Main typography (TABConf 7 weights) */
+/* Main typography */
 .site-main h1 {
   font-size: clamp(1.65rem, 4vw, 2.15rem);
   font-weight: 700;
@@ -221,7 +233,7 @@ body {
   font-size: 1.05rem;
   font-weight: 600;
   margin: 1.5rem 0 0.6rem;
-  color: var(--text-soft);
+  color: var(--text-secondary);
 }
 
 .site-main p {
@@ -243,7 +255,7 @@ body {
 .site-main hr {
   border: none;
   height: 1px;
-  background: var(--border);
+  background: var(--border-strong);
   margin: 2rem 0;
 }
 
@@ -260,8 +272,8 @@ body {
 }
 
 .site-main strong {
-  color: var(--text);
-  font-weight: 700;
+  color: var(--text-secondary);
+  font-weight: 600;
 }
 
 .site-main table {
@@ -281,28 +293,34 @@ body {
 }
 
 .site-main th {
-  background: var(--bg-code);
-  color: var(--text);
-  font-weight: 700;
+  background: var(--bg-elevated);
+  color: var(--text-secondary);
+  font-weight: 600;
+  font-family: var(--font-mono);
+  font-size: 0.82rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
 }
 
-/* Home hero — white card, gray border only (no tinted panel) */
+/* Home hero */
 .home-hero {
   text-align: center;
   margin-bottom: 2.5rem;
   padding: 1.5rem 1rem 0.5rem;
-  background: var(--bg);
+  background: var(--bg-elevated);
   border: 1px solid var(--border);
-  border-radius: 8px;
+  border-radius: 10px;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.35), inset 0 1px 0 rgba(255, 255, 255, 0.04);
 }
 
 .home-hero__dates {
   margin: 0 0 1.25rem;
   font-family: var(--font-mono);
-  font-size: clamp(0.9rem, 2.2vw, 1rem);
+  font-size: clamp(0.88rem, 2.2vw, 0.98rem);
   font-weight: 500;
-  color: var(--text-secondary);
-  letter-spacing: 0.06em;
+  color: var(--accent-terminal);
+  letter-spacing: 0.08em;
+  text-shadow: 0 0 24px var(--glow-green);
 }
 
 .home-hero__logo {
@@ -311,6 +329,7 @@ body {
   max-width: min(380px, 88vw);
   width: 100%;
   height: auto;
+  filter: drop-shadow(0 4px 20px rgba(0, 0, 0, 0.45));
 }
 
 .ticket-actions {
@@ -333,7 +352,7 @@ body {
   font-weight: 700;
   font-size: 0.98rem;
   text-decoration: none !important;
-  transition: background 0.15s ease, border-color 0.15s ease, transform 0.12s ease;
+  transition: background 0.15s ease, border-color 0.15s ease, transform 0.12s ease, box-shadow 0.15s ease;
 }
 
 .ticket-actions__btn:hover {
@@ -344,31 +363,28 @@ body {
   transform: translateY(0);
 }
 
-/* TABConf 7–style orange (title sponsor) for BTC */
 .ticket-actions__btn--btc {
-  background: var(--accent-orange);
-  color: #fff;
-  border: 2px solid var(--accent-orange);
-  box-shadow: 0 1px 0 var(--accent-orange-dark);
+  background: linear-gradient(180deg, var(--accent-orange) 0%, var(--accent-orange-dark) 100%);
+  color: #0c0a08;
+  border: 1px solid rgba(251, 191, 36, 0.35);
+  box-shadow: 0 0 24px rgba(245, 158, 11, 0.2);
 }
 
 .ticket-actions__btn--btc:hover {
-  background: var(--accent-orange-dark);
-  border-color: var(--accent-orange-dark);
-  color: #fff;
+  box-shadow: 0 0 32px rgba(245, 158, 11, 0.28);
+  color: #0c0a08;
 }
 
-/* Light bar like 7’s “downloads” strip for fiat */
 .ticket-actions__btn--fiat {
   background: var(--bg-panel);
-  color: #444;
+  color: var(--text-secondary);
   border: 1px solid var(--border-strong);
 }
 
 .ticket-actions__btn--fiat:hover {
-  background: #eaeaea;
-  border-color: #ccc;
-  color: #222;
+  background: var(--bg-hover);
+  border-color: rgba(110, 231, 168, 0.25);
+  color: var(--text);
 }
 
 @media (max-width: 480px) {
@@ -383,7 +399,7 @@ body {
   border-top: 1px solid var(--border);
   padding: 1.75rem 1.5rem 2.5rem;
   margin-top: 0;
-  background: var(--bg);
+  background: var(--bg-elevated);
 }
 
 .site-footer__inner {
@@ -392,8 +408,10 @@ body {
 }
 
 .site-footer__tagline {
-  font-size: 0.9rem;
-  color: var(--text-muted);
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  letter-spacing: 0.04em;
+  color: var(--text-dim);
   margin: 0 0 0.75rem;
 }
 
@@ -412,6 +430,6 @@ body {
 }
 
 .site-footer__past a:hover {
-  color: var(--text);
+  color: var(--link);
   text-decoration: underline;
 }
