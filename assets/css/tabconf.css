@@ -245,9 +245,9 @@ body {
 
 .satellite-card {
   display: grid;
-  grid-template-columns: minmax(0, 108px) minmax(0, 1fr);
-  gap: 0.85rem;
-  align-items: center;
+  grid-template-columns: minmax(5.75rem, 0.4fr) minmax(0, 1fr);
+  gap: 0.85rem 1rem;
+  align-items: stretch;
   padding: 0.75rem 0.85rem;
   text-decoration: none !important;
   color: inherit;
@@ -270,7 +270,6 @@ body {
 }
 
 .satellite-card--vegas {
-  grid-template-columns: minmax(0, 80px) minmax(0, 1fr);
   border-left: 2px solid rgba(236, 72, 153, 0.45);
 }
 
@@ -292,22 +291,18 @@ body {
   border: 1px solid var(--border);
   aspect-ratio: 5 / 3;
   flex-shrink: 0;
+  width: 100%;
+  min-width: 0;
+  align-self: center;
 }
 
+/* Fill the full card height so the logo uses object-fit: contain at maximum size. */
 .satellite-card__art--vegas {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0.3rem;
+  aspect-ratio: unset;
+  align-self: stretch;
+  height: 100%;
+  min-height: 6rem;
   background: var(--bg-elevated);
-}
-
-.satellite-card__art--vegas .satellite-card__img {
-  width: auto;
-  height: auto;
-  max-width: 68%;
-  max-height: 68%;
-  object-fit: contain;
 }
 
 .satellite-card__svg {
@@ -325,26 +320,35 @@ body {
 }
 
 .satellite-card__body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.2rem;
   min-width: 0;
+  flex: 1;
+  align-self: stretch;
 }
 
 .satellite-card__title {
-  margin: 0 0 0.35rem;
+  margin: 0;
   font-size: 1rem;
   font-weight: 700;
   letter-spacing: -0.02em;
   color: var(--text);
+  max-width: none;
 }
 
 .satellite-card__meta {
-  margin: 0 0 0.45rem;
+  margin: 0;
   font-size: 0.875rem;
   line-height: 1.45;
   color: var(--text-muted);
+  max-width: none;
 }
 
 .satellite-card__url {
   display: inline-block;
+  margin-top: 0.15rem;
   font-family: var(--font-mono);
   font-size: 0.78rem;
   font-weight: 500;
@@ -358,13 +362,9 @@ body {
 
 @media (max-width: 480px) {
   .satellite-card {
-    grid-template-columns: minmax(0, 88px) minmax(0, 1fr);
-    gap: 0.65rem;
+    grid-template-columns: minmax(5rem, 0.38fr) minmax(0, 1fr);
+    gap: 0.65rem 0.75rem;
     padding: 0.65rem 0.75rem;
-  }
-
-  .satellite-card--vegas {
-    grid-template-columns: minmax(0, 70px) minmax(0, 1fr);
   }
 
   .satellite-card__title {
