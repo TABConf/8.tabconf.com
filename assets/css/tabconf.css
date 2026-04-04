@@ -93,16 +93,119 @@ body {
 }
 
 .site-title {
-  font-weight: 700;
-  font-size: 1.15rem;
-  letter-spacing: -0.02em;
-  color: var(--text);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
   text-decoration: none;
   font-family: var(--font-mono);
+  font-weight: 600;
+  font-size: 1.05rem;
+  letter-spacing: -0.03em;
+  line-height: 1;
+  transition: transform 0.15s ease, filter 0.2s ease;
 }
 
 .site-title:hover {
-  color: var(--link);
+  transform: translateX(1px);
+}
+
+.site-title:focus-visible {
+  outline: 2px solid var(--accent-terminal);
+  outline-offset: 4px;
+  border-radius: 4px;
+}
+
+/* Blinking “shell” cursor dot */
+.site-title__prompt {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 0.55rem;
+  height: 1.1rem;
+  flex-shrink: 0;
+}
+
+.site-title__dot {
+  display: block;
+  width: 0.38rem;
+  height: 0.38rem;
+  border-radius: 1px;
+  background: var(--accent-terminal);
+  box-shadow: 0 0 10px var(--glow-green);
+  animation: site-title-blink 1.25s step-end infinite;
+}
+
+@keyframes site-title-blink {
+  0%,
+  50% {
+    opacity: 1;
+  }
+  50.01%,
+  100% {
+    opacity: 0.2;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .site-title {
+    transition: none;
+  }
+
+  .site-title:hover {
+    transform: none;
+  }
+
+  .site-title__dot {
+    animation: none;
+    opacity: 1;
+  }
+}
+
+.site-title__word {
+  display: inline-flex;
+  align-items: baseline;
+}
+
+.site-title__tab {
+  color: var(--accent-terminal);
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+.site-title__conf {
+  color: var(--text);
+  font-weight: 700;
+}
+
+.site-title:hover .site-title__tab {
+  text-shadow: 0 0 18px var(--glow-green);
+}
+
+.site-title:hover .site-title__conf {
+  color: var(--text-secondary);
+}
+
+.site-title__ver {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 1.65rem;
+  height: 1.45rem;
+  padding: 0 0.4rem;
+  margin-left: 0.1rem;
+  font-size: 0.72rem;
+  font-weight: 700;
+  line-height: 1;
+  color: var(--accent-orange-bright);
+  background: rgba(245, 158, 11, 0.12);
+  border: 1px solid rgba(245, 158, 11, 0.35);
+  border-radius: 4px;
+  letter-spacing: 0.04em;
+}
+
+.site-title:hover .site-title__ver {
+  background: rgba(245, 158, 11, 0.2);
+  border-color: rgba(251, 191, 36, 0.5);
 }
 
 /* Layout */
