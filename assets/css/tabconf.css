@@ -208,7 +208,7 @@ body {
   border-color: rgba(251, 191, 36, 0.5);
 }
 
-/* Satellite events strip (temporary): remove with _includes/satellite-events-strip.html */
+/* Header promo strip: markup from _includes/satellite-events-strip.html; cards from _cards/*.md */
 .satellite-strip {
   border-bottom: 1px solid var(--border);
   background: linear-gradient(180deg, rgba(18, 22, 28, 0.98) 0%, var(--bg-deep) 100%);
@@ -230,17 +230,12 @@ body {
   color: var(--text-dim);
 }
 
+/* auto-fit so one visible card grows to use width; two cards share the row when space allows. */
 .satellite-strip__grid {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 17.5rem), 1fr));
   gap: 1rem;
   align-items: stretch;
-}
-
-@media (max-width: 720px) {
-  .satellite-strip__grid {
-    grid-template-columns: 1fr;
-  }
 }
 
 .satellite-card {
@@ -285,6 +280,14 @@ body {
   border-left-color: rgba(110, 231, 168, 0.45);
 }
 
+.satellite-card--neutral {
+  border-left: 2px solid rgba(139, 149, 165, 0.4);
+}
+
+.satellite-card--neutral:hover {
+  border-left-color: rgba(110, 231, 168, 0.4);
+}
+
 .satellite-card__art {
   border-radius: 6px;
   overflow: hidden;
@@ -296,19 +299,15 @@ body {
   align-self: center;
 }
 
-/* Fill the full card height so the logo uses object-fit: contain at maximum size. */
-.satellite-card__art--vegas {
+/* Fill card height; dark panel so light / transparent PNG logos read clearly. */
+.satellite-card__art--vegas,
+.satellite-card__art--london,
+.satellite-card__art--neutral {
   aspect-ratio: unset;
   align-self: stretch;
   height: 100%;
   min-height: 6rem;
   background: var(--bg-elevated);
-}
-
-.satellite-card__svg {
-  display: block;
-  width: 100%;
-  height: 100%;
 }
 
 .satellite-card__img {

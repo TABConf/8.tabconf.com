@@ -6,3 +6,8 @@ url: "https://8.tabconf.com"
 baseurl: ""
 permalink: pretty
 markdown: kramdown
+
+# Promo cards in the header strip: one Markdown file per card in _cards/ (see front matter there).
+collections:
+  cards:
+    output: false
