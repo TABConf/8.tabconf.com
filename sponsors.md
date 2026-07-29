@@ -31,7 +31,9 @@ TABConf is a technical conference. The room is protocol and application develope
 | [General Sponsor](#general-sponsor) | $3,000 | Unlimited |
 | [Private Meeting Space](#private-meeting-space) | $1,450 per day | Limited |
 
-Every package includes sponsor tickets and a logo on this page.
+Every package includes sponsor tickets, a logo on this page, and a spot on the sponsor board at the conference.
+
+> **The sponsor board goes to print on September 25, 2026.** Sponsors confirmed by then are on it. We will happily take sponsors after that date and you still get everything else in your package, but the board will already be printed.
 
 ---
 
@@ -139,6 +141,7 @@ There is no cap on this one. Every additional grant sponsor means more builders 
 The straightforward way to support the conference and be listed as a sponsor.
 
 - Logo on the sponsors page
+- Your logo on the sponsor board at the conference, if confirmed by September 25
 - 4 sponsor tickets
 
 ### Private Meeting Space
