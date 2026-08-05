@@ -19,11 +19,11 @@ See **[Venue &amp; format]({{ '/venue/' | relative_url }})** and **[Schedule]({{
 
 ### Where is TABConf 8?
 
-**Georgia Tech Exhibition Hall** in Atlanta, Georgia — same venue family as [TABConf 7](https://7.tabconf.com/faq). Map and context: **[Venue]({{ '/venue/' | relative_url }})**.
+**Georgia Tech Exhibition Hall** in Atlanta, Georgia, October 12-15, 2026. Map and context: **[Venue]({{ '/venue/' | relative_url }})**.
 
 ### Where should I stay?
 
-See **[Hotels]({{ '/hotels/' | relative_url }})** for options near the venue (based on our TABConf 7 hotel list). Book directly with hotels; blocks and rates vary by year.
+See **[Hotels]({{ '/hotels/' | relative_url }})**. We are negotiating room blocks at three hotels near the venue, with rates posted as they are agreed and booking links added as each block goes live.
 
 ### Is TABConf for me?
 
@@ -39,7 +39,7 @@ TABConf typically offers **one ticket type** that covers the full event (Builder
 
 ### Refunds and transfers
 
-Policies are set per edition. For transfers or questions, email **[hello@tabconf.com](mailto:hello@tabconf.com)** (same channel we used for [TABConf 7](https://7.tabconf.com/faq)).
+For transfers or questions, email **[hello@tabconf.com](mailto:hello@tabconf.com)**.
 
 ### Grants
 

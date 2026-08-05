@@ -10,7 +10,7 @@ TABConf brings back **Capture the Bitcoin** — a **scavenger hunt** that tests 
 
 You’ll team up, learn something new, and compete to be the first to claim bitcoin tied to a challenge. Details for TABConf 8 will be posted here closer to the event.
 
-**To get started at the conference:** pick up your **challenge materials at the entrance** (same flow as [TABConf 7](https://7.tabconf.com/ctb)).
+**To get started at the conference:** pick up your **challenge materials at the entrance**.
 
 ### Past years
 

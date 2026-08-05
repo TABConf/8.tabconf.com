@@ -6,7 +6,7 @@ description: How to propose a talk or workshop for TABConf 8.
 
 # Submit a talk or workshop
 
-TABConf builds its program from **community proposals**. Same workflow as [TABConf 7](https://7.tabconf.com/schedule.html):
+TABConf builds its program from **community proposals**, curated in public. No one can buy their way onto the stage.
 
 1. **Open a GitHub issue** in **[TABConf/8.tabconf.com](https://github.com/TABConf/8.tabconf.com/issues)** describing your session (topic, format, length, any village preference).  
 2. Organizers and village leads review proposals.  

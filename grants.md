@@ -6,7 +6,7 @@ description: TABConf 8 grant program — apply for financial support to attend t
 
 # Grant program
 
-TABConf’s grant program helps people attend who might not otherwise be able to — covering things like **tickets**, **travel**, and **lodging**. The goal is the same as [TABConf 7’s program](https://7.tabconf.com/grants): keep the event **inclusive** and bring in contributors from across the Bitcoin community.
+TABConf’s grant program helps people attend who might not otherwise be able to, covering things like **tickets**, **travel**, and **lodging**. The goal is to keep the event **inclusive** and bring in contributors from across the Bitcoin community.
 
 Grants may include:
 

@@ -14,7 +14,7 @@ description: TABConf 8 venue — Georgia Tech Exhibition Hall — and schedule f
 
 **[Georgia Tech Exhibition Hall](https://www.google.com/maps/search/?api=1&query=Georgia+Tech+Exhibition+Hall+Atlanta)**
 
-Same footprint we used for [TABConf 7](https://7.tabconf.com/faq): a central Atlanta location with room for villages, workshops, and the main program.
+A central Atlanta location with room for villages, workshops, and the main program.
 
 ## What happens each day
 
