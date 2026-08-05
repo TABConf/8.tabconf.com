@@ -8,44 +8,36 @@ description: Where to stay for TABConf 8. Room blocks and hotels near the Georgi
 
 TABConf 8 is at the **[Georgia Tech Exhibition Hall](https://www.google.com/maps/search/?api=1&query=Georgia+Tech+Exhibition+Hall+Atlanta)** in Atlanta, **October 12-15, 2026**.
 
-We are negotiating room blocks at three nearby hotels. Rates below are what has been offered to us so far. **Booking links will be posted here as each block is finalized**, and we will email the list when they go live.
-
-> **Rooms are first come, first served, and we plan to release any unbooked block rooms in early to mid September.** After that you are booking at whatever the public rate happens to be, so book early if you want the group rate.
-
 ## Room blocks
 
-### Hampton Inn Atlanta Georgia Tech Downtown
-**Closest to the venue**, on the edge of campus. 244 North Avenue.
+We are negotiating blocks at three hotels. Rates shown are what has been offered to us so far.
 
-**Rate to be confirmed · block coming soon**
+| Hotel | Distance | Group rate | Booking link and code |
+|---|---|---|---|
+| **Hampton Inn Atlanta Georgia Tech Downtown** | Closest, on the campus edge | Coming soon | Coming soon |
+| **Homewood Suites by Hilton Atlanta Midtown** | About 1.3 mi | **$175** per night | Coming soon |
+| **Hilton Garden Inn Atlanta Midtown** | About 1.3 mi | **$209** per night | Coming soon |
 
-### Homewood Suites by Hilton Atlanta Midtown
-Extended-stay suites with kitchens, about 1.3 miles from the venue. 97 10th Street.
+**Booking links and codes are not live yet.** We will post them in this table and email the list as each block is confirmed.
 
-**$175 per night · booking link coming soon**
+Notes:
 
-Starting as a courtesy block of 10 rooms per night, so this one is the most likely to fill.
+- **Homewood Suites** is extended-stay suites with kitchens. The block starts at 10 rooms per night, so it is the most likely to fill first.
+- **Hilton Garden Inn** is $209, which is last year's rate. The hotel could not go lower for our dates. It shares a building with the Homewood, which is $34 a night cheaper.
+- **Hampton Inn** is the closest to the venue. Rate still being negotiated.
 
-### Hilton Garden Inn Atlanta Midtown
-About 1.3 miles from the venue, same address as the Homewood. 97 10th Street.
+> **Rooms are first come, first served, and we plan to release any unbooked block rooms in early to mid September.** After that you book at whatever the public rate happens to be.
 
-**$209 per night · booking link coming soon**
+## Other hotels nearby
 
-Being straight with you: this is last year's rate and the hotel could not go lower for our dates. If the price matters more than the brand, the Homewood next door is $34 a night cheaper.
+**Not negotiated.** No block, no group rate, no code. Book direct at the public rate. Listed because they are close and people ask.
 
-## Other options nearby
-
-**Not negotiated.** We have no block and no group rate at any of these, so you are booking at whatever the public rate is. Listed because people ask and because they are close.
-
-### Five star
-
-- [Four Seasons Hotel Atlanta](https://www.fourseasons.com/atlanta/), about 1.8 mi
-- [The Ritz-Carlton, Atlanta](https://www.ritzcarlton.com/en/hotels/atlrz-the-ritz-carlton-atlanta/overview/), about 1.9 mi
-
-### Four star
-
-- [Bellyard West Midtown Atlanta](https://www.marriott.com/en-us/hotels/atltm-bellyard-west-midtown-atlanta-a-tribute-portfolio-hotel/overview/), about 1.2 mi
-- [Loews Atlanta Hotel](https://www.loewshotels.com/atlanta-hotel), about 1.7 mi
-- [Epicurean Atlanta](https://www.marriott.com/en-us/hotels/atlmk-epicurean-atlanta-autograph-collection/overview/), about 1.7 mi
+| Hotel | Distance | Class |
+|---|---|---|
+| [Bellyard West Midtown Atlanta](https://www.marriott.com/en-us/hotels/atltm-bellyard-west-midtown-atlanta-a-tribute-portfolio-hotel/overview/) | About 1.2 mi | Four star |
+| [Loews Atlanta Hotel](https://www.loewshotels.com/atlanta-hotel) | About 1.7 mi | Four star |
+| [Epicurean Atlanta](https://www.marriott.com/en-us/hotels/atlmk-epicurean-atlanta-autograph-collection/overview/) | About 1.7 mi | Four star |
+| [Four Seasons Hotel Atlanta](https://www.fourseasons.com/atlanta/) | About 1.8 mi | Five star |
+| [The Ritz-Carlton, Atlanta](https://www.ritzcarlton.com/en/hotels/atlrz-the-ritz-carlton-atlanta/overview/) | About 1.9 mi | Five star |
 
 Questions? [hello@tabconf.com](mailto:hello@tabconf.com)
