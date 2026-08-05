@@ -8,7 +8,7 @@ description: Where to stay for TABConf 8. Room blocks and hotels near the Georgi
 
 **[Georgia Tech Exhibition Hall](https://www.google.com/maps/search/?api=1&query=Georgia+Tech+Exhibition+Hall+Atlanta)**, Atlanta. **October 12-15, 2026.**
 
-## For the plebs
+## 🦐 For the plebs
 
 Group rates we are negotiating. Codes go in this table as each block is confirmed, and we will email the list.
 
@@ -20,7 +20,7 @@ Group rates we are negotiating. Codes go in this table as each block is confirme
 
 Unbooked block rooms are released **early to mid September**. First come, first served.
 
-## For the whales
+## 🐳 For the whales
 
 No block, no group rate, no code. Book direct.
 
