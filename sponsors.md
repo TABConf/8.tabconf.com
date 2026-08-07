@@ -24,7 +24,7 @@ TABConf is a technical conference. The room is protocol and application develope
 | [Builder Days Sponsor](#builder-days-sponsor) | $20,000 | 1 |
 | [Lunch Sponsor](#lunch-sponsor) | $20,000 | 2 |
 | [Hardware Sponsor](#hardware-sponsor) | $15,000 | 1 |
-| [Wristband Sponsor](#wristband-sponsor) | $15,000 | 1 |
+| [Wristband Sponsor](#wristband-sponsor) | $15,000 | 0 |
 | [Grant Sponsor](#grant-sponsor) | $10,000 | Unlimited |
 | [Capture the Bitcoin Sponsor](#capture-the-bitcoin-sponsor) | $5,000 | 4 |
 | [Coffee and Water Sponsor](#coffee-and-water-sponsor) | $5,000 | 4 |
@@ -93,7 +93,7 @@ For hardware makers who want their devices in developers' hands during the event
 - 8 sponsor tickets
 
 ### Wristband Sponsor
-**$15,000 · 1 slot**
+**$15,000 · 0 slots**
 
 Every attendee gets an RFID wristband at check-in and wears it for the whole event.
 
