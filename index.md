@@ -16,7 +16,7 @@ description: TABConf 8 — October 12–15, 2026 · Atlanta. Technical Bitcoin c
     fetchpriority="high">
   <div class="ticket-actions">
     <a class="ticket-actions__btn ticket-actions__btn--btc" href="https://checkout.opennode.com/p/7d51f71f-f3e6-4159-bbfa-3a231d14e5b8" rel="noopener noreferrer" target="_blank">Buy with Bitcoin</a>
-    <a class="ticket-actions__btn ticket-actions__btn--fiat" href="https://buy.stripe.com/00w4gzapSf0o4ubg2mdQQ0b" rel="noopener noreferrer" target="_blank">Buy with fiat (Stripe)</a>
+    <a class="ticket-actions__btn ticket-actions__btn--fiat" href="https://buy.stripe.com/5kQcN5dC43hGgcTcQadQQ0c" rel="noopener noreferrer" target="_blank">Buy with fiat (Stripe)</a>
   </div>
 </div>
 
