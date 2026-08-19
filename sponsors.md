@@ -29,7 +29,7 @@ TABConf is a technical conference. The room is protocol and application develope
 | [Capture the Bitcoin Sponsor](#capture-the-bitcoin-sponsor) | $5,000 | 2 |
 | [Coffee and Water Sponsor](#coffee-and-water-sponsor) | $5,000 | 0 |
 | [General Sponsor](#general-sponsor) | $3,000 | Unlimited |
-| [Private Meeting Space](#private-meeting-space) | $1,450 per day | Limited |
+| [Private Meeting Space](#private-meeting-space) | $1,450 per day | 3 rooms |
 
 Every package includes sponsor tickets, a logo on this page, and a spot on the sponsor board at the conference.
 
@@ -145,7 +145,7 @@ The straightforward way to support the conference and be listed as a sponsor.
 - 4 sponsor tickets
 
 ### Private Meeting Space
-**$1,450 per day · Limited availability**
+**$1,450 per day · 3 rooms remaining**
 
 Rooms of roughly 1,300 square feet upstairs from the conference ballroom. Useful if you are running meetings, interviews, or team sessions during the event.
 
