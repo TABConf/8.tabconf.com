@@ -17,17 +17,17 @@ TABConf is a technical conference. The room is protocol and application develope
 
 ## Packages at a glance
 
-| Package | Price | Slots |
+| Package | Price | Slots remaining |
 |---|---|---|
 | [Main Sponsor](#main-sponsor) | $35,000 | 1 |
 | [Official After Party Sponsor](#official-after-party-sponsor) | $25,000 | 1 |
 | [Builder Days Sponsor](#builder-days-sponsor) | $20,000 | 1 |
-| [Lunch Sponsor](#lunch-sponsor) | $20,000 | 2 |
+| [Lunch Sponsor](#lunch-sponsor) | $20,000 | 0 |
 | [Hardware Sponsor](#hardware-sponsor) | $15,000 | 1 |
 | [Wristband Sponsor](#wristband-sponsor) | $15,000 | 0 |
 | [Grant Sponsor](#grant-sponsor) | $10,000 | Unlimited |
 | [Capture the Bitcoin Sponsor](#capture-the-bitcoin-sponsor) | $5,000 | 4 |
-| [Coffee and Water Sponsor](#coffee-and-water-sponsor) | $5,000 | 4 |
+| [Coffee and Water Sponsor](#coffee-and-water-sponsor) | $5,000 | 0 |
 | [General Sponsor](#general-sponsor) | $3,000 | Unlimited |
 | [Private Meeting Space](#private-meeting-space) | $1,450 per day | Limited |
 
@@ -71,7 +71,7 @@ Builder Days runs October 12-13 and is where the hands-on work happens: workshop
 - 8 sponsor tickets
 
 ### Lunch Sponsor
-**$20,000 · 2 slots**
+**$20,000 · 0 slots remaining**
 
 Food is where the hallway track actually happens. Both days of the conference, everyone stops and eats at the same time.
 
@@ -93,7 +93,7 @@ For hardware makers who want their devices in developers' hands during the event
 - 8 sponsor tickets
 
 ### Wristband Sponsor
-**$15,000 · 0 slots**
+**$15,000 · 0 slots remaining**
 
 Every attendee gets an RFID wristband at check-in and wears it for the whole event.
 
@@ -124,7 +124,7 @@ There is no cap on this one. Every additional grant sponsor means more builders 
 - 4 sponsor tickets
 
 ### Coffee and Water Sponsor
-**$5,000 · 4 slots**
+**$5,000 · 0 slots remaining**
 
 - Countless TABConf attendees forever in your debt
 - Branding at the coffee and water stations

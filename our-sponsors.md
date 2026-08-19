@@ -82,7 +82,7 @@ Want your name here? See [sponsorship packages](/sponsors/) or email [hello@tabc
 <h2>Supporting Sponsors</h2>
 <ul class="sponsor-grid">
   <li class="sponsor-card">
-    <div class="sponsor-card__slot">logo to come</div>
+    <div class="sponsor-card__slot"><img src="{{ '/assets/sponsors/hrf.png' | relative_url }}" alt="Human Rights Foundation" loading="lazy"></div>
     <div class="sponsor-card__name"><a href="https://hrf.org">Human Rights Foundation</a></div>
   </li>
   <li class="sponsor-card">
@@ -96,11 +96,11 @@ Want your name here? See [sponsorship packages](/sponsors/) or email [hello@tabc
 <h2>Community Sponsors</h2>
 <ul class="sponsor-grid">
   <li class="sponsor-card">
-    <div class="sponsor-card__slot">logo to come</div>
+    <div class="sponsor-card__slot"><img src="{{ '/assets/sponsors/river.png' | relative_url }}" alt="River" loading="lazy"></div>
     <div class="sponsor-card__name"><a href="https://river.com">River</a></div>
   </li>
   <li class="sponsor-card">
-    <div class="sponsor-card__slot">logo to come</div>
+    <div class="sponsor-card__slot"><img src="{{ '/assets/sponsors/bitcoin-tutorials.png' | relative_url }}" alt="Bitcoin Tutorials" loading="lazy"></div>
     <div class="sponsor-card__name"><a href="https://bitcointutorials.org">Bitcoin Tutorials</a></div>
   </li>
 </ul>
