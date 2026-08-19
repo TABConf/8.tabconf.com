@@ -26,7 +26,7 @@ TABConf is a technical conference. The room is protocol and application develope
 | [Hardware Sponsor](#hardware-sponsor) | $15,000 | 1 |
 | [Wristband Sponsor](#wristband-sponsor) | $15,000 | 0 |
 | [Grant Sponsor](#grant-sponsor) | $10,000 | Unlimited |
-| [Capture the Bitcoin Sponsor](#capture-the-bitcoin-sponsor) | $5,000 | 4 |
+| [Capture the Bitcoin Sponsor](#capture-the-bitcoin-sponsor) | $5,000 | 2 |
 | [Coffee and Water Sponsor](#coffee-and-water-sponsor) | $5,000 | 0 |
 | [General Sponsor](#general-sponsor) | $3,000 | Unlimited |
 | [Private Meeting Space](#private-meeting-space) | $1,450 per day | Limited |
@@ -115,7 +115,7 @@ There is no cap on this one. Every additional grant sponsor means more builders 
 - 4 sponsor tickets
 
 ### Capture the Bitcoin Sponsor
-**$5,000 · 4 slots**
+**$5,000 · 2 slots remaining**
 
 [Capture the Bitcoin]({{ '/ctb/' | relative_url }}) is the scavenger hunt challenge that runs through the conference. Sponsors can put branding in the challenge itself, or build a challenge around their own technology.
 
