@@ -19,7 +19,7 @@ TABConf is a technical conference. The room is protocol and application develope
 
 | Package | Price | Slots remaining |
 |---|---|---|
-| [Main Sponsor](#main-sponsor) | $35,000 | 1 |
+| [Main Sponsor](#main-sponsor) | $35,000 | 0 |
 | [Official After Party Sponsor](#official-after-party-sponsor) | $25,000 | 1 |
 | [Builder Days Sponsor](#builder-days-sponsor) | $20,000 | 1 |
 | [Lunch Sponsor](#lunch-sponsor) | $20,000 | 0 |
@@ -40,7 +40,7 @@ Every package includes sponsor tickets, a logo on this page, and a spot on the s
 ## Headline packages
 
 ### Main Sponsor
-**$35,000 · 1 slot**
+**$35,000 · 0 slots remaining**
 
 The most visible position at the conference. Your branding is on the main stage and throughout the hall for all four days.
 
