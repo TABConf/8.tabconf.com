@@ -15,8 +15,7 @@ Group rates we are negotiating. Codes go in this table as each block is confirme
 | Hotel | Distance | Rate | Booking code | Notes |
 |---|---|---|---|---|
 | **[Hampton Inn Atlanta Georgia Tech Downtown](https://www.hilton.com/en/book/reservation/rooms/?ctyhocn=ATLGTHX&arrivalDate=2026-10-11&departureDate=2026-10-16&groupCode=900&room1NumAdults=1&displayCurrency=USD)** | On the campus edge | See booking link | **900** | **Block is live.** Closest to the venue. The link is preset to Oct 11 in, Oct 16 out; change the dates to suit your trip. On the Hilton Honors app or site, enter group code 900 |
-| **Homewood Suites by Hilton Atlanta Midtown** | 1.3 mi | **$175**/night | Coming soon | Suites with kitchens. Block starts at 10 rooms |
-| **Hilton Garden Inn Atlanta Midtown** | 1.3 mi | **$209**/night | Coming soon | Same building as the Homewood, $34 more |
+| **Homewood Suites and Hilton Garden Inn Atlanta Midtown** | 1.3 mi | Homewood **$175**/night<br>Garden Inn **$209**/night | Coming soon | One building, 97 10th Street, two brands sharing a front desk and a sales office. Homewood is extended-stay suites with kitchens; the Garden Inn is standard rooms for $34 more |
 
 Unbooked block rooms are released **early to mid September**. First come, first served.
 
