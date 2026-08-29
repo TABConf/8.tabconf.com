@@ -12,10 +12,11 @@ description: Where to stay for TABConf 8. Room blocks and hotels near the Georgi
 
 **All three blocks are live. Book direct through the links below to get the group rate.**
 
-| Hotel | Distance | Rate | Booking code | Notes |
-|---|---|---|---|---|
-| **[Hampton Inn Atlanta Georgia Tech Downtown](https://www.hilton.com/en/book/reservation/rooms/?ctyhocn=ATLGTHX&arrivalDate=2026-10-11&departureDate=2026-10-16&groupCode=900&room1NumAdults=1&displayCurrency=USD)** | On the campus edge | See booking link | **900** | **Block is live.** Closest to the venue. The link is preset to Oct 11 in, Oct 16 out; change the dates to suit your trip. On the Hilton Honors app or site, enter group code 900 |
-| **Homewood Suites and Hilton Garden Inn Atlanta Midtown** | 1.3 mi | Homewood **$175**/night<br>Garden Inn **$209**/night<br>plus tax and fees | **Book by Sep 13**<br>Homewood **90M**, [book](https://www.hilton.com/en/attend-my-event/atlmihw-90m-c7fd7344-106c-46e0-9e12-68ccf7307da3/)<br>Garden Inn **916**, [book](https://www.hilton.com/en/attend-my-event/atlamgi-916-9d58016b-8441-4458-934b-0ea6f2296f5e/) | One building, 97 10th Street, two brands sharing a front desk. Homewood is extended-stay suites with kitchens; the Garden Inn is standard rooms for $34 more. Block covers Oct 12 to 15 |
+| Hotel | Address | Distance | Rate | Group code | Notes |
+|---|---|---|---|---|---|
+| **Hampton Inn Atlanta Georgia Tech Downtown** | 244 North Avenue, Atlanta, GA 30313 | On the campus edge | See booking link | **900**<br>[Book](https://www.hilton.com/en/book/reservation/rooms/?ctyhocn=ATLGTHX&arrivalDate=2026-10-11&departureDate=2026-10-16&groupCode=900&room1NumAdults=1&displayCurrency=USD) | Closest to the venue. The link is preset to Oct 11 in, Oct 16 out; change the dates to suit your trip |
+| **Homewood Suites Atlanta Midtown** | 97 10th Street NW, Atlanta, GA 30309 | 1.3 mi | **$175**/night<br>plus tax and fees | **90M**<br>[Book](https://www.hilton.com/en/attend-my-event/atlmihw-90m-c7fd7344-106c-46e0-9e12-68ccf7307da3/) | Extended stay suites with kitchens. Block covers Oct 12 to 15. **Book by Sep 13** |
+| **Hilton Garden Inn Atlanta Midtown** | 97 10th Street NW, Atlanta, GA 30309 | 1.3 mi | **$209**/night<br>plus tax and fees | **916**<br>[Book](https://www.hilton.com/en/attend-my-event/atlamgi-916-9d58016b-8441-4458-934b-0ea6f2296f5e/) | Standard rooms. Same building as the Homewood, sharing a front desk. Block covers Oct 12 to 15. **Book by Sep 13** |
 
 **The Midtown block closes September 13, 2026.** After that the rooms go back to the hotel. First come, first served.
 
