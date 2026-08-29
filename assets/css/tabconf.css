@@ -572,6 +572,40 @@ body {
   letter-spacing: 0.06em;
 }
 
+/* Wide tables. Opt in from markdown with {: .table-wide} on the line after the table.
+   The 42rem cap above is right for two and three column tables and much too narrow for
+   the six column hotel block, where every cell was wrapping. Scoped rather than global
+   so the sponsor package tables keep their current width and type size. */
+.site-main table.table-wide {
+  max-width: none;
+  font-size: 0.85rem;
+}
+
+.site-main table.table-wide th,
+.site-main table.table-wide td {
+  padding: 0.45rem 0.6rem;
+  vertical-align: top;
+}
+
+.site-main table.table-wide th {
+  font-size: 0.7rem;
+  letter-spacing: 0.04em;
+}
+
+/* Below the tablet breakpoint six columns cannot fit at any readable size, so let the
+   table scroll sideways inside itself rather than pushing the whole page wide. */
+@media (max-width: 860px) {
+  .site-main table.table-wide {
+    display: block;
+    overflow-x: auto;
+  }
+
+  .site-main table.table-wide th,
+  .site-main table.table-wide td {
+    min-width: 7.5rem;
+  }
+}
+
 /* Home hero */
 .home-hero {
   text-align: center;
