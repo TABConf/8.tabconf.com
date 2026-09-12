@@ -6,7 +6,7 @@ description: TABConf 8 grant program. Apply for a free ticket to the conference.
 
 # Grant program
 
-**A grant is a free ticket to TABConf 8.** That is all we are able to offer at this point. There is no travel assistance and no lodging support.
+**A grant is a free ticket to TABConf 8.** We are no longer providing travel assistance or lodging support, so a ticket is all we are able to offer at this point.
 
 It is for people who genuinely cannot afford a ticket, and who are either:
 
