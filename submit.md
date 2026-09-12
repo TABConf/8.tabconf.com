@@ -14,6 +14,6 @@ TABConf builds its program from **community proposals**, curated in public. No o
 
 Be specific: what attendees will learn, what prerequisites matter, and whether it’s a talk, panel, or hands-on workshop.
 
-**Grants:** if you need travel support, see **[Grants]({{ '/grants/' | relative_url }})**.
+**Grants:** if you cannot afford a ticket, see **[Grants]({{ '/grants/' | relative_url }})**.
 
 **Logistics:** [FAQ]({{ '/faq/' | relative_url }}) · [Venue]({{ '/venue/' | relative_url }}) · [Hotels]({{ '/hotels/' | relative_url }})

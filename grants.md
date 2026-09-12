@@ -1,14 +1,19 @@
 ---
 layout: default
 title: Grants
-description: TABConf 8 grant program. Apply for a complimentary ticket to the conference.
+description: TABConf 8 grant program. Apply for a free ticket to the conference.
 ---
 
 # Grant program
 
-TABConf’s grant program helps people attend who might not otherwise be able to. The goal is to keep the event **inclusive** and bring in contributors from across the Bitcoin community.
+**A grant is a free ticket to TABConf 8.** That is all we are able to offer at this point. There is no travel assistance and no lodging support.
 
-**Grants are now a complimentary ticket only.** Travel and lodging support is no longer available.
+It is for people who genuinely cannot afford a ticket, and who are either:
+
+- **students**, or  
+- **working on a Bitcoin or Bitcoin-adjacent project**  
+
+The goal is to keep the event **inclusive** and bring in contributors from across the Bitcoin community.
 
 ## Apply
 
@@ -16,7 +21,7 @@ TABConf’s grant program helps people attend who might not otherwise be able to
 
 Applications are open. Apply early: the number of tickets is finite.
 
-Priority goes to people doing development work in the space, so tickets reach those actively building on and contributing to Bitcoin rather than whoever applies first. Tell us what you are working on.
+Tell us what you are working on.
 
 Questions? Email **[hello@tabconf.com](mailto:hello@tabconf.com)**.
 

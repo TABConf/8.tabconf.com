@@ -104,9 +104,9 @@ Every attendee gets an RFID wristband at check-in and wears it for the whole eve
 ### Grant Sponsor
 **$10,000 · Unlimited**
 
-Grant money is used for one thing: bringing more people to TABConf who would not otherwise be able to come. It covers tickets, travel, and lodging.
+Grant money is used for one thing: bringing more people to TABConf who would not otherwise be able to come. It covers conference tickets for people who genuinely cannot afford one.
 
-Recipients are prioritized by their development work in the space, so the funding goes to people actively building on and contributing to Bitcoin rather than to whoever applies first. See the [grant program]({{ '/grants/' | relative_url }}) for details.
+Recipients are students or people working on a Bitcoin or Bitcoin-adjacent project, so the funding goes to people actively building on and contributing to Bitcoin rather than to whoever applies first. See the [grant program]({{ '/grants/' | relative_url }}) for details.
 
 There is no cap on this one. Every additional grant sponsor means more builders in the room, so we will take as many as we can get.
 
