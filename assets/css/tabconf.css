@@ -608,13 +608,69 @@ body {
 
 /* Home hero */
 .home-hero {
-  text-align: center;
   margin-bottom: 2.5rem;
-  padding: 1.5rem 1rem 0.5rem;
+  padding: 1.5rem 1.25rem 1rem;
   background: var(--bg-elevated);
   border: 1px solid var(--border);
   border-radius: 10px;
   box-shadow: 0 12px 40px rgba(0, 0, 0, 0.35), inset 0 1px 0 rgba(255, 255, 255, 0.04);
+  display: grid;
+  gap: 1.5rem 2rem;
+  align-items: center;
+}
+
+/* Mobile first: tickets before the poster, so buying never sits below a tall
+   image. The two-column order flips on wider screens, where the art leads. */
+.home-hero__body {
+  order: 1;
+  text-align: center;
+  min-width: 0;
+}
+
+.home-hero__art {
+  order: 2;
+  margin: 0;
+  min-width: 0;
+}
+
+.home-hero__art > a {
+  display: block;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid var(--border-strong);
+  box-shadow: 0 18px 50px rgba(0, 0, 0, 0.5);
+  transition: transform 0.18s ease, box-shadow 0.18s ease;
+}
+
+.home-hero__art > a:hover,
+.home-hero__art > a:focus-visible {
+  transform: translateY(-2px);
+  box-shadow: 0 22px 60px rgba(0, 0, 0, 0.6), 0 0 0 1px rgba(110, 231, 168, 0.35);
+}
+
+.home-hero__art > a img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.home-hero__credit a {
+  color: var(--text-muted);
+  text-decoration: underline;
+  text-underline-offset: 0.18em;
+}
+
+.home-hero__credit a:hover {
+  color: var(--link);
+}
+
+.home-hero__credit {
+  margin: 0.6rem 0 0;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  letter-spacing: 0.04em;
+  color: var(--text-dim);
+  text-align: center;
 }
 
 .home-hero__dates {
@@ -629,11 +685,50 @@ body {
 
 .home-hero__logo {
   display: block;
-  margin: 0 auto 1.75rem;
+  margin: 0 auto 1rem;
   max-width: min(380px, 88vw);
   width: 100%;
   height: auto;
   filter: drop-shadow(0 4px 20px rgba(0, 0, 0, 0.45));
+}
+
+.home-hero__final {
+  margin: 0 0 1.5rem;
+  font-family: var(--font-mono);
+  font-size: 0.82rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+
+/* Inside the hero the buttons share a narrower column, so let them flex
+   rather than hold a hard 200px and wrap into a lopsided stack. */
+.home-hero .ticket-actions {
+  align-items: stretch;
+}
+
+.home-hero .ticket-actions__btn {
+  min-width: 0;
+  flex: 1 1 170px;
+  max-width: 260px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  text-align: center;
+}
+
+@media (min-width: 900px) {
+  .home-hero {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    padding: 2rem;
+  }
+
+  .home-hero__art {
+    order: 1;
+  }
+
+  .home-hero__body {
+    order: 2;
+  }
 }
 
 .ticket-actions {
