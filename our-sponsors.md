@@ -123,6 +123,9 @@ Want your name here? See [sponsorship packages](/sponsors/) or email [hello@tabc
     <div class="sponsor-card__slot"><img src="{{ '/assets/sponsors/bitcoin-tutorials.png' | relative_url }}" alt="Bitcoin Tutorials" loading="lazy"></div>
     <div class="sponsor-card__name"><a href="https://bitcointutorials.org">Bitcoin Tutorials</a></div>
   </li>
+  <li class="sponsor-card">
+    <div class="sponsor-card__name"><a href="https://mara.com">MARA</a></div>
+  </li>
 </ul>
 </div>
 
