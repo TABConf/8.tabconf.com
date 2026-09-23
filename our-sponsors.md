@@ -32,8 +32,16 @@ Want your name here? See [sponsorship packages](/sponsors/) or email [hello@tabc
 .sponsor-tier__note { opacity: .6; font-size: .88rem; margin-top: 0; }
 .sponsor-grid { display: grid; gap: 1.1rem; margin: 1.1rem 0 0; padding: 0; list-style: none; }
 .sponsor-card { border: 1px solid rgba(128,128,128,.28); border-radius: 8px; padding: 1.2rem; display: flex; flex-direction: column; gap: .6rem; align-items: center; justify-content: center; text-align: center; }
-.sponsor-card__slot { width: 100%; display: flex; align-items: center; justify-content: center; border: 1px dashed rgba(128,128,128,.4); border-radius: 6px; font-size: .68rem; letter-spacing: .05em; text-transform: uppercase; opacity: .45; }
+.sponsor-card__slot { width: 100%; display: flex; align-items: center; justify-content: center; border-radius: 6px; border: 1px solid rgba(128,128,128,.18); }
 .sponsor-card__slot img { max-width: 100%; height: auto; display: block; }
+/* No logo file yet: drop the empty box and let the name carry the tile at the
+   size its group deserves. */
+.sponsor-card:not(:has(img)) .sponsor-card__slot { display: none; }
+.sponsor-card:not(:has(img)) .sponsor-card__name { opacity: .92; }
+.tier-xl .sponsor-card:not(:has(img)) .sponsor-card__name { font-size: 1.8rem; }
+.tier-lg .sponsor-card:not(:has(img)) .sponsor-card__name { font-size: 1.4rem; }
+.tier-md .sponsor-card:not(:has(img)) .sponsor-card__name { font-size: 1.05rem; }
+.tier-sm .sponsor-card:not(:has(img)) .sponsor-card__name { font-size: .9rem; }
 .sponsor-card__name a { text-decoration: none; }
 
 /* Size ladder. Larger is more prominent. tier-xl is reserved for a future top group. */
@@ -64,15 +72,22 @@ Want your name here? See [sponsorship packages](/sponsors/) or email [hello@tabc
 }
 </style>
 
+<div class="sponsor-tier tier-xl">
+<h2>Presenting Sponsor</h2>
+<ul class="sponsor-grid">
+  <li class="sponsor-card">
+    <div class="sponsor-card__name"><a href="https://layertwolabs.com">Layer Two Labs</a></div>
+  </li>
+</ul>
+</div>
+
 <div class="sponsor-tier tier-lg">
 <h2>Headline Sponsors</h2>
 <ul class="sponsor-grid">
   <li class="sponsor-card">
-    <div class="sponsor-card__slot">logo to come</div>
     <div class="sponsor-card__name"><a href="https://contract.design">Digital Contract Design</a></div>
   </li>
   <li class="sponsor-card">
-    <div class="sponsor-card__slot">logo to come</div>
     <div class="sponsor-card__name"><a href="https://wasabiwallet.io">Wasabi Wallet</a></div>
   </li>
 </ul>
@@ -86,7 +101,12 @@ Want your name here? See [sponsorship packages](/sponsors/) or email [hello@tabc
     <div class="sponsor-card__name"><a href="https://hrf.org">Human Rights Foundation</a></div>
   </li>
   <li class="sponsor-card">
-    <div class="sponsor-card__slot">logo to come</div>
+    <div class="sponsor-card__name"><a href="https://cleanspark.com">CleanSpark</a></div>
+  </li>
+  <li class="sponsor-card">
+    <div class="sponsor-card__name"><a href="https://zbd.gg">ZBD</a></div>
+  </li>
+  <li class="sponsor-card">
     <div class="sponsor-card__name"><a href="https://jintek.consulting">Jintek Consulting</a></div>
   </li>
 </ul>

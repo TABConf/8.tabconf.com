@@ -674,13 +674,22 @@ body {
 }
 
 .home-hero__dates {
-  margin: 0 0 1.25rem;
+  margin: 0 0 0.35rem;
   font-family: var(--font-mono);
   font-size: clamp(0.88rem, 2.2vw, 0.98rem);
   font-weight: 500;
   color: var(--accent-terminal);
   letter-spacing: 0.08em;
   text-shadow: 0 0 24px var(--glow-green);
+}
+
+.home-hero__times {
+  margin: 0 0 1.25rem;
+  font-family: var(--font-mono);
+  font-size: clamp(0.72rem, 1.9vw, 0.82rem);
+  font-weight: 400;
+  color: var(--text-dim);
+  letter-spacing: 0.06em;
 }
 
 .home-hero__logo {
