@@ -15,11 +15,11 @@ TABConf’s schedule is **open source**: sessions and villages are organized in 
 
 | | |
 |-------|------|
-| **Doors open** | Monday, Oct 12 at 11:00 AM |
+| **Doors open** | Monday, Oct 12 at 9:30 AM |
 | **Event ends** | Thursday, Oct 15 at 5:00 PM |
 | **Closing ceremony** | Wednesday, Oct 14 at 4:00 PM |
 
-The closing ceremony is on Wednesday rather than the final day, so that as many people as possible are still in the room for it. Thursday runs a full day afterwards.
+The closing ceremony is on **Wednesday** rather than the final day, so that as many people as possible are still in the room for it. Thursday runs a full day afterwards.
 
 ### Format reminder
 
