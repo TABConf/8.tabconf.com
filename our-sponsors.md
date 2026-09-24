@@ -76,6 +76,7 @@ Want your name here? See [sponsorship packages](/sponsors/) or email [hello@tabc
 <h2>Presenting Sponsor</h2>
 <ul class="sponsor-grid">
   <li class="sponsor-card">
+    <div class="sponsor-card__slot"><img src="{{ '/assets/sponsors/layer-two-labs.svg' | relative_url }}" alt="Layer Two Labs" loading="lazy"></div>
     <div class="sponsor-card__name"><a href="https://layertwolabs.com">Layer Two Labs</a></div>
   </li>
 </ul>
@@ -101,12 +102,14 @@ Want your name here? See [sponsorship packages](/sponsors/) or email [hello@tabc
     <div class="sponsor-card__name"><a href="https://hrf.org">Human Rights Foundation</a></div>
   </li>
   <li class="sponsor-card">
+    <div class="sponsor-card__slot"><img src="{{ '/assets/sponsors/cleanspark.png' | relative_url }}" alt="CleanSpark" loading="lazy"></div>
     <div class="sponsor-card__name"><a href="https://cleanspark.com">CleanSpark</a></div>
   </li>
   <li class="sponsor-card">
     <div class="sponsor-card__name"><a href="https://zbd.gg">ZBD</a></div>
   </li>
   <li class="sponsor-card">
+    <div class="sponsor-card__slot"><img src="{{ '/assets/sponsors/jintek.png' | relative_url }}" alt="Jintek Consulting" loading="lazy"></div>
     <div class="sponsor-card__name"><a href="https://jintek.consulting">Jintek Consulting</a></div>
   </li>
 </ul>
@@ -124,6 +127,7 @@ Want your name here? See [sponsorship packages](/sponsors/) or email [hello@tabc
     <div class="sponsor-card__name"><a href="https://bitcointutorials.org">Bitcoin Tutorials</a></div>
   </li>
   <li class="sponsor-card">
+    <div class="sponsor-card__slot"><img src="{{ '/assets/sponsors/mara.png' | relative_url }}" alt="MARA" loading="lazy"></div>
     <div class="sponsor-card__name"><a href="https://mara.com">MARA</a></div>
   </li>
 </ul>
