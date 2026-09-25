@@ -86,9 +86,11 @@ Want your name here? See [sponsorship packages](/sponsors/) or email [hello@tabc
 <h2>Headline Sponsors</h2>
 <ul class="sponsor-grid">
   <li class="sponsor-card">
+    <div class="sponsor-card__slot"><img src="{{ '/assets/sponsors/dcd.png' | relative_url }}" alt="Digital Contract Design" loading="lazy"></div>
     <div class="sponsor-card__name"><a href="https://contract.design">Digital Contract Design</a></div>
   </li>
   <li class="sponsor-card">
+    <div class="sponsor-card__slot"><img src="{{ '/assets/sponsors/wasabi.svg' | relative_url }}" alt="Wasabi Wallet" loading="lazy"></div>
     <div class="sponsor-card__name"><a href="https://wasabiwallet.io">Wasabi Wallet</a></div>
   </li>
 </ul>
