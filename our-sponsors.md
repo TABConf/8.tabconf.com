@@ -33,6 +33,11 @@ Want your name here? See [sponsorship packages](/sponsors/) or email [hello@tabc
 .sponsor-grid { display: grid; gap: 1.1rem; margin: 1.1rem 0 0; padding: 0; list-style: none; }
 .sponsor-card { border: 1px solid rgba(128,128,128,.28); border-radius: 8px; padding: 1.2rem; display: flex; flex-direction: column; gap: .6rem; align-items: center; justify-content: center; text-align: center; }
 .sponsor-card__slot { width: 100%; display: flex; align-items: center; justify-content: center; border-radius: 6px; border: 1px solid rgba(128,128,128,.18); }
+/* Some logos are dark artwork with no light variant, so on a dark page they
+   read as a smudge. Give those a light plate to sit on, the way Jintek's file
+   already has one baked in. Applied by hand per sponsor rather than guessed,
+   because only the dark ones want it. */
+.sponsor-card__slot--light { background: #f2f2ef; padding: 12px 16px; border-color: rgba(128,128,128,.28); }
 .sponsor-card__slot img { max-width: 100%; height: auto; display: block; }
 /* No logo file yet: drop the empty box and let the name carry the tile at the
    size its group deserves. */
@@ -100,7 +105,7 @@ Want your name here? See [sponsorship packages](/sponsors/) or email [hello@tabc
 <h2>Supporting Sponsors</h2>
 <ul class="sponsor-grid">
   <li class="sponsor-card">
-    <div class="sponsor-card__slot"><img src="{{ '/assets/sponsors/hrf.png' | relative_url }}" alt="Human Rights Foundation" loading="lazy"></div>
+    <div class="sponsor-card__slot sponsor-card__slot--light"><img src="{{ '/assets/sponsors/hrf.png' | relative_url }}" alt="Human Rights Foundation" loading="lazy"></div>
     <div class="sponsor-card__name"><a href="https://hrf.org">Human Rights Foundation</a></div>
   </li>
   <li class="sponsor-card">
@@ -122,11 +127,11 @@ Want your name here? See [sponsorship packages](/sponsors/) or email [hello@tabc
 <h2>Community Sponsors</h2>
 <ul class="sponsor-grid">
   <li class="sponsor-card">
-    <div class="sponsor-card__slot"><img src="{{ '/assets/sponsors/river.png' | relative_url }}" alt="River" loading="lazy"></div>
+    <div class="sponsor-card__slot sponsor-card__slot--light"><img src="{{ '/assets/sponsors/river.png' | relative_url }}" alt="River" loading="lazy"></div>
     <div class="sponsor-card__name"><a href="https://river.com">River</a></div>
   </li>
   <li class="sponsor-card">
-    <div class="sponsor-card__slot"><img src="{{ '/assets/sponsors/bitcoin-tutorials.png' | relative_url }}" alt="Bitcoin Tutorials" loading="lazy"></div>
+    <div class="sponsor-card__slot sponsor-card__slot--light"><img src="{{ '/assets/sponsors/bitcoin-tutorials.png' | relative_url }}" alt="Bitcoin Tutorials" loading="lazy"></div>
     <div class="sponsor-card__name"><a href="https://bitcointutorials.org">Bitcoin Tutorials</a></div>
   </li>
   <li class="sponsor-card">
