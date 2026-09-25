@@ -43,6 +43,8 @@ description: TABConf 8, October 12-15 2026, Atlanta. Technical Bitcoin conferenc
 - **Wed Oct 14**: Conference sessions on the main stage. **Closing ceremony at 4:00 PM.**
 - **Thu Oct 15**: Conference sessions continue, finishing at **5:00 PM**.
 
+**[The final TABConf runs on these people.]({{ '/our-sponsors/' | relative_url }})** Ten sponsors, several of them every year this conference has existed.
+
 Venue: **[Georgia Tech Exhibition Hall]({{ '/venue/' | relative_url }})**. Need a room? See **[Hotels]({{ '/hotels/' | relative_url }})** (options near the venue; book directly with properties).
 
 ---

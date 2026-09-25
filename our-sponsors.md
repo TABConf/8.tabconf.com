@@ -2,7 +2,6 @@
 layout: default
 title: Our Sponsors
 description: The companies and people backing the final TABConf.
-noindex: true
 ---
 
 <!--
@@ -10,7 +9,7 @@ noindex: true
   source. Nothing about payment, amounts, or the reasoning behind who is listed and where
   belongs in this repo, in the markup, in a comment, or in a commit message.
 
-  Unlinked work in progress. When ready, link from sponsors.md and drop the noindex flag.
+  Linked from the home page and the sidebar, and indexable, as of 2026-09-25.
 
   Tiers rank by size and position: larger and higher is more prominent. The ladder is the
   .tier-* classes below, sized tier-xl > tier-lg > tier-md > tier-sm. tier-xl is defined
