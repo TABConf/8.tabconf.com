@@ -108,6 +108,7 @@ Want your name here? See [sponsorship packages](/sponsors/) or email [hello@tabc
     <div class="sponsor-card__name"><a href="https://cleanspark.com">CleanSpark</a></div>
   </li>
   <li class="sponsor-card">
+    <div class="sponsor-card__slot"><img src="{{ '/assets/sponsors/zbd-logo-light.svg' | relative_url }}" alt="ZBD" loading="lazy"></div>
     <div class="sponsor-card__name"><a href="https://zbd.gg">ZBD</a></div>
   </li>
   <li class="sponsor-card">
