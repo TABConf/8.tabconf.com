@@ -90,6 +90,9 @@ Want your name here? See [sponsorship packages](/sponsors/) or email [hello@tabc
 <h2>Headline Sponsors</h2>
 <ul class="sponsor-grid">
   <li class="sponsor-card">
+    <div class="sponsor-card__name"><a href="https://muzi.works">Muzi Works</a></div>
+  </li>
+  <li class="sponsor-card">
     <div class="sponsor-card__slot"><img src="{{ '/assets/sponsors/dcd.png' | relative_url }}" alt="Digital Contract Design" loading="lazy"></div>
     <div class="sponsor-card__name"><a href="https://contract.design">Digital Contract Design</a></div>
   </li>
@@ -103,6 +106,9 @@ Want your name here? See [sponsorship packages](/sponsors/) or email [hello@tabc
 <div class="sponsor-tier tier-md">
 <h2>Supporting Sponsors</h2>
 <ul class="sponsor-grid">
+  <li class="sponsor-card">
+    <div class="sponsor-card__name"><a href="https://mempool.space">mempool.space</a></div>
+  </li>
   <li class="sponsor-card">
     <div class="sponsor-card__slot sponsor-card__slot--light"><img src="{{ '/assets/sponsors/hrf.png' | relative_url }}" alt="Human Rights Foundation" loading="lazy"></div>
     <div class="sponsor-card__name"><a href="https://hrf.org">Human Rights Foundation</a></div>
