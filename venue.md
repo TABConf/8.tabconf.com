@@ -1,14 +1,14 @@
 ---
 layout: default
 title: Venue & format
-description: TABConf 8 venue — Georgia Tech Exhibition Hall — and schedule format.
+description: TABConf 8 venue, Georgia Tech Exhibition Hall, and schedule format.
 ---
 
 # Venue &amp; format
 
 ## Dates
 
-**October 12–15, 2026** — Atlanta, Georgia.
+**October 12-15, 2026**. Atlanta, Georgia.
 
 ## Venue
 
@@ -20,8 +20,8 @@ A central Atlanta location with room for villages, workshops, and the main progr
 
 | Days | Focus |
 |------|--------|
-| **Oct 12–13** | **Builder Days &amp; workshops** — longer sessions, hands-on work, and space to build with peers. |
-| **Oct 14–15** | **Conference sessions** — villages, stages, and community-led tracks; the core TABConf program. |
+| **Oct 12-13** | **Builder Days &amp; workshops**: longer sessions, hands-on work, and space to build with peers. |
+| **Oct 14-15** | **Conference sessions**: villages, stages, and community-led tracks; the core TABConf program. |
 
 Hotels and neighborhood notes: **[Hotels]({{ '/hotels/' | relative_url }})**.
 

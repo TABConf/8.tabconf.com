@@ -1,11 +1,15 @@
 title: TABConf 8
 description: >-
-  TABConf 8 — October 12–15, 2026, Atlanta. Technical Bitcoin conference:
+  TABConf 8, October 12-15 2026, Atlanta. Technical Bitcoin conference:
   Builder Days, workshops, villages, and open-source scheduling.
 url: "https://8.tabconf.com"
 baseurl: ""
 permalink: pretty
 markdown: kramdown
+
+# Emits /sitemap.xml at build. robots.txt points search engines at it.
+plugins:
+  - jekyll-sitemap
 
 # Promo cards in the header strip: one Markdown file per card in _cards/ (see front matter there).
 collections:
