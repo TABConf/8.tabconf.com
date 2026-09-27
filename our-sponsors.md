@@ -107,6 +107,7 @@ Want your name here? See [sponsorship packages](/sponsors/) or email [hello@tabc
 <h2>Supporting Sponsors</h2>
 <ul class="sponsor-grid">
   <li class="sponsor-card">
+    <div class="sponsor-card__slot"><img src="{{ '/assets/sponsors/mempool-space.svg' | relative_url }}" alt="mempool.space" loading="lazy"></div>
     <div class="sponsor-card__name"><a href="https://mempool.space">mempool.space</a></div>
   </li>
   <li class="sponsor-card">
