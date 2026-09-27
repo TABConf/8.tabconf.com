@@ -48,20 +48,25 @@ Want your name here? See [sponsorship packages](/sponsors/) or email [hello@tabc
 .tier-sm .sponsor-card:not(:has(img)) .sponsor-card__name { font-size: .9rem; }
 .sponsor-card__name a { text-decoration: none; }
 
-/* Size ladder. Larger is more prominent. tier-xl is reserved for a future top group. */
+/* Size ladder. Larger is more prominent. tier-xl is reserved for a future top group.
+   HEIGHTS ARE A GEOMETRIC LADDER, each step 1.44x the one below: 180, 125, 87, 60.
+   They used to be 180, 140, 96, 60, which steps unevenly at 1.29, 1.46 and 1.60,
+   so the WEAKEST step sat at the top and Headline read as barely below Presenting.
+   Position and size are the only things on this page that encode rank, so an
+   uneven ladder is not cosmetic. Change one number and recompute the rest. */
 .tier-xl .sponsor-grid { grid-template-columns: repeat(auto-fill, minmax(400px, 1fr)); }
 .tier-xl .sponsor-card__slot { min-height: 180px; }
 .tier-xl .sponsor-card__slot img { max-height: 180px; }
 .tier-xl .sponsor-card__name { font-size: 1.5rem; font-weight: 700; }
 
-.tier-lg .sponsor-grid { grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); }
-.tier-lg .sponsor-card__slot { min-height: 140px; }
-.tier-lg .sponsor-card__slot img { max-height: 140px; }
-.tier-lg .sponsor-card__name { font-size: 1.3rem; font-weight: 700; }
+.tier-lg .sponsor-grid { grid-template-columns: repeat(auto-fill, minmax(290px, 1fr)); }
+.tier-lg .sponsor-card__slot { min-height: 125px; }
+.tier-lg .sponsor-card__slot img { max-height: 125px; }
+.tier-lg .sponsor-card__name { font-size: 1.2rem; font-weight: 700; }
 
-.tier-md .sponsor-grid { grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); }
-.tier-md .sponsor-card__slot { min-height: 96px; }
-.tier-md .sponsor-card__slot img { max-height: 96px; }
+.tier-md .sponsor-grid { grid-template-columns: repeat(auto-fill, minmax(210px, 1fr)); }
+.tier-md .sponsor-card__slot { min-height: 87px; }
+.tier-md .sponsor-card__slot img { max-height: 87px; }
 .tier-md .sponsor-card__name { font-size: 1.05rem; font-weight: 600; }
 
 .tier-sm .sponsor-grid { grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); }
@@ -150,4 +155,4 @@ Want your name here? See [sponsorship packages](/sponsors/) or email [hello@tabc
 
 ---
 
-Sponsorship is open until the conference, though **the sponsor board goes to print on September 25, 2026**. See [sponsorship packages](/sponsors/).
+Sponsorship is open until the conference. See [sponsoring TABConf](/sponsors/).
