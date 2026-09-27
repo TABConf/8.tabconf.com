@@ -31,4 +31,4 @@ Grant money does one thing: it brings people to TABConf who could not otherwise 
 
 The **[Human Rights Foundation Bitcoin Development Fund](https://hrf.org/programs_bitcoin-development-fund/)** supported TABConf 7 grants. HRF backs developers making Bitcoin more private, decentralized, and resilient, especially for activists, journalists, and civil society worldwide.
 
-TABConf 8 grant sponsors will be listed here as they confirm. If your company wants to fund grants, see the [Grant Sponsor package]({{ '/sponsors/' | relative_url }}#grant-sponsor) or email **[hello@tabconf.com](mailto:hello@tabconf.com)**.
+TABConf 8 grant sponsors are listed on the [sponsors page]({{ '/our-sponsors/' | relative_url }}). If your company wants to fund grants, email **[hello@tabconf.com](mailto:hello@tabconf.com)**.

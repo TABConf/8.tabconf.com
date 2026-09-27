@@ -16,4 +16,4 @@ You’ll team up, learn something new, and compete to be the first to claim bitc
 
 Recaps and clips from earlier CTBs are on the **[TABConf YouTube channel](https://www.youtube.com/@tabconf)**.
 
-Sponsors for CTB will be listed on the [Sponsors]({{ '/sponsors/' | relative_url }}) page when confirmed.
+CTB sponsors are listed on the [sponsors page]({{ '/our-sponsors/' | relative_url }}). Donations of any size fund the prizes and the challenges, and you can build a challenge around your own technology. See [sponsoring TABConf]({{ '/sponsors/' | relative_url }}) or email **[hello@tabconf.com](mailto:hello@tabconf.com)**.
