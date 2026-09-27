@@ -20,10 +20,10 @@ TABConf is a technical conference. The room is protocol and application develope
 | Package | Price | Slots remaining |
 |---|---|---|
 | [Main Sponsor](#main-sponsor) | $35,000 | 0 |
-| [Official After Party Sponsor](#official-after-party-sponsor) | $25,000 | 1 |
+| [Official After Party Sponsor](#official-after-party-sponsor) | $25,000 | 0 |
 | [Builder Days Sponsor](#builder-days-sponsor) | $20,000 | 1 |
 | [Lunch Sponsor](#lunch-sponsor) | $20,000 | 0 |
-| [Hardware Sponsor](#hardware-sponsor) | $15,000 | 1 |
+| [Hardware Sponsor](#hardware-sponsor) | $15,000 | 0 |
 | [Wristband Sponsor](#wristband-sponsor) | $15,000 | 0 |
 | [Grant Sponsor](#grant-sponsor) | $10,000 | Unlimited |
 | [Capture the Bitcoin Sponsor](#capture-the-bitcoin-sponsor) | $5,000 | 2 |
@@ -51,7 +51,7 @@ The most visible position at the conference. Your branding is on the main stage 
 - 10 sponsor tickets
 
 ### Official After Party Sponsor
-**$25,000 · 1 slot**
+**$25,000 · 0 slots remaining**
 
 The party everyone remembers, and the one they talk about the next morning. Your name is on it.
 
@@ -84,7 +84,7 @@ Food is where the hallway track actually happens. Both days of the conference, e
 ## Feature packages
 
 ### Hardware Sponsor
-**$15,000 · 1 slot**
+**$15,000 · 0 slots remaining**
 
 For hardware makers who want their devices in developers' hands during the event.
 
