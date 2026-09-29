@@ -150,6 +150,10 @@ Want your name here? See [sponsorship packages](/sponsors/) or email [hello@tabc
     <div class="sponsor-card__slot"><img src="{{ '/assets/sponsors/mara.png' | relative_url }}" alt="MARA" loading="lazy"></div>
     <div class="sponsor-card__name"><a href="https://mara.com">MARA</a></div>
   </li>
+  <li class="sponsor-card">
+    <div class="sponsor-card__slot sponsor-card__slot--light"><img src="{{ '/assets/sponsors/obscura.svg' | relative_url }}" alt="Obscura" loading="lazy"></div>
+    <div class="sponsor-card__name"><a href="https://obscura.com">Obscura</a></div>
+  </li>
 </ul>
 </div>
 

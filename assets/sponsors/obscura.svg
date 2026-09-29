@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1176" height="206" fill="none" viewBox="0 0 1176 206">
+  <g clip-path="url(#a)">
+    <path fill="#FFC7B2" d="M11 43v130h32V43z"/>
+    <path fill="#FF6025" d="M43 162v22h167v-22zM65 54H43v108h22z"/>
+    <path fill="#fff" d="M54 65h146v97H54z"/>
+    <path fill="#FF6025" d="M183 0v11h11V0zM54 0v11h11V0z"/>
+    <path fill="#000" d="M183 11v21h11V11zM54 11v21h11V11zM11 32v11h210V32z"/>
+    <path fill="#FFEBE3" d="M43 43v11h27V43z"/>
+    <path fill="#FF6025" d="M70 43v11h140V43zM22 54v11h11V54zm0 22v11h11V76zm0 48v11h11v-11zm0 22v11h11v-11z"/>
+    <path fill="#FFC7B2" d="M54 54v11h157V54z"/>
+    <path fill="#000" d="M76 86v27h11V86zm98 0v27h11V86zm-82 43v11h11v-11zm71 0v11h11v-11zm-60 11v11h60v-11z"/>
+    <path fill="#FFC7B2" d="M199 65v97h11V65z"/>
+    <path fill="#000" d="M0 43v130h11V43z"/>
+    <path fill="#FF6025" d="M210 43v130h11V43z"/>
+    <path fill="#000" d="M221 43v130h11V43z"/>
+    <path fill="#FFC7B2" d="M21 173v11h22v-11z"/>
+    <path fill="#FF6025" d="M65 184H22v11h172v-11z"/>
+    <path fill="#FFC7B2" d="M65 173v11h91v-11zm107 0v11h11v-11z"/>
+    <path fill="#000" d="M205 173v11h16v-11zm-11 11v11h16v-11zm-172 0v11h11v-11zm-11-11v11h11v-11zm22 22v11h161v-11z"/>
+    <g clip-path="url(#b)">
+      <path fill="#000" fill-rule="evenodd" d="M827.087 111.476V87.337l78.355.084v88.157h-78.009v-53.673h53.118v-10.429zm53.464 29.34h-28.227v10.985h28.227z" clip-rule="evenodd"/>
+      <path fill="#000" d="M781.407 175.44H755.96V87.42h58.125v24.056h-32.678zm-40.742.138h-78.009V87.421h24.891v64.38h28.227v-64.38h24.891zm-90.94-.138h-64.521V87.42h64.521v24.056h-39.631v40.325h39.631zm-79.955.138h-69.248v-23.777h43.94v-11.263h-43.94V87.56h69.248v23.916h-43.942v10.707h43.942z"/>
+      <path fill="#000" fill-rule="evenodd" d="M486.616 175.578h-83.71V47.235h25.308V87.56h58.402zm-58.402-64.102v40.325h33.512v-40.325zm-125.425 64.102V87.56h83.71v88.018zm25.308-64.102v40.325h33.511v-40.325z" clip-rule="evenodd"/>
+    </g>
+    <path fill="#FF6025" stroke="#FF6025" stroke-width="3.364" d="M1091.76 89.412v85.483h-56.69v32.848h-19.79V89.412zm-138.813 0v65.695h29.484V89.412h19.789v69.059h-16.425v16.424h-36.212v-16.424H933.16v-69.06zm224.633 0v85.483h-19.78v-65.696h-33.2v65.696h-19.78V89.412zm-142.51 65.695h36.9v-45.908h-36.9z"/>
+  </g>
+  <defs>
+    <clipPath id="a">
+      <path fill="#fff" d="M0 0h1176v206H0z"/>
+    </clipPath>
+    <clipPath id="b">
+      <path fill="#fff" d="M302.789 47.239h602.653v129.276H302.789z"/>
+    </clipPath>
+  </defs>
+</svg>
