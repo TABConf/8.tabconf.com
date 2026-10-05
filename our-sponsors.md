@@ -129,6 +129,10 @@ Want your name here? See [sponsorship packages](/sponsors/) or email [hello@tabc
     <div class="sponsor-card__name"><a href="https://zbd.gg">ZBD</a></div>
   </li>
   <li class="sponsor-card">
+    <div class="sponsor-card__slot"><img src="{{ '/assets/sponsors/lxdev-light.png' | relative_url }}" alt="LXDEV" loading="lazy"></div>
+    <div class="sponsor-card__name"><a href="https://lx.dev">LXDEV</a></div>
+  </li>
+  <li class="sponsor-card">
     <div class="sponsor-card__slot"><img src="{{ '/assets/sponsors/jintek.png' | relative_url }}" alt="Jintek Consulting" loading="lazy"></div>
     <div class="sponsor-card__name"><a href="https://jintek.consulting">Jintek Consulting</a></div>
   </li>
