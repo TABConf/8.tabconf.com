@@ -140,7 +140,7 @@ Want your name here? See [sponsorship packages](/sponsors/) or email [hello@tabc
 </div>
 
 <div class="sponsor-tier tier-sm">
-<h2>Community Sponsors</h2>
+<h2>General Sponsors</h2>
 <ul class="sponsor-grid">
   <li class="sponsor-card">
     <div class="sponsor-card__slot sponsor-card__slot--light"><img src="{{ '/assets/sponsors/river.png' | relative_url }}" alt="River" loading="lazy"></div>
