@@ -20,7 +20,7 @@ description: TABConf 8, October 12-15 2026, Atlanta. Technical Bitcoin conferenc
 
   <div class="home-hero__body">
     <p class="home-hero__dates">October 12-15, 2026 · Atlanta, GA</p>
-    <p class="home-hero__times">Doors open Monday 11:00 AM · Ends Thursday 5:00 PM</p>
+    <p class="home-hero__times">Doors open Monday 10:00 AM · Sessions start 11:00 AM · Ends Thursday 5:00 PM</p>
     <img
       class="home-hero__logo"
       src="{{ '/assets/TABConf8_Logo.png' | relative_url }}"
@@ -38,7 +38,7 @@ description: TABConf 8, October 12-15 2026, Atlanta. Technical Bitcoin conferenc
 
 ## When you’re here
 
-- **Mon Oct 12**: Builder Days open at **11:00 AM**, across two rooms.
+- **Mon Oct 12**: Doors open at **10:00 AM**, Builder Days sessions start at **11:00 AM** across two rooms.
 - **Tue Oct 13**: Builder Days &amp; workshops continue (hands-on building and deep dive workshops), two rooms.
 - **Wed Oct 14**: Conference sessions on the main stage. **Closing ceremony at 4:00 PM.**
 - **Thu Oct 15**: Conference sessions continue, finishing at **5:00 PM**.
