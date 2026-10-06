@@ -19,6 +19,7 @@ TABConf’s schedule is **open source**: sessions and villages are organized in 
 | **Sessions start** | Monday, Oct 12 at 11:00 AM |
 | **Event ends** | Thursday, Oct 15 at 5:00 PM |
 | **Closing ceremony** | Wednesday, Oct 14 at 4:00 PM |
+| **After party** | Wednesday, Oct 14, 6:30 to 10:30 PM, The Painted Duck, 976 Brady Ave (brought to you by mempool.space) |
 
 The closing ceremony is on **Wednesday** rather than the final day, so that as many people as possible are still in the room for it. Thursday runs a full day afterwards.
 
