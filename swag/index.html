@@ -1,0 +1,204 @@
+---
+layout: null
+permalink: /swag/
+sitemap: false
+---
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#0c0e11">
+<title>TABConf 8 Swag</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;600;700&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0c0e11;--panel:#16191e;--line:#262b33;--text:#f2f2f0;--muted:#9aa1ab;--orange:#f7931a;--teal:#5fe3b5}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html,body{margin:0;background:var(--bg);color:var(--text);font:16px/1.4 "Instrument Sans",system-ui,sans-serif}
+main{max-width:1100px;margin:0 auto;padding:20px 16px calc(120px + env(safe-area-inset-bottom))}
+header{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:18px}
+h1{font-size:22px;margin:0;letter-spacing:.02em}
+h1 span{color:var(--orange)}
+button{font:inherit;cursor:pointer;border:0}
+.back{background:none;color:var(--muted);padding:10px 0;font-size:15px}
+.back[hidden]{display:none}
+[hidden]{display:none!important}
+
+/* home */
+.home{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));margin-top:8vh}
+.big{background:var(--panel);border:2px solid var(--line);color:var(--text);border-radius:18px;padding:40px 24px;text-align:left;min-height:180px;display:flex;flex-direction:column;justify-content:flex-end}
+.big b{font-size:28px;display:block}
+.big small{color:var(--muted);font-size:16px;margin-top:6px}
+.big:active{border-color:var(--orange)}
+.big.one b{color:var(--orange)} .big.many b{color:var(--teal)}
+
+/* grid */
+.grid{display:grid;gap:14px;grid-template-columns:repeat(auto-fill,minmax(230px,1fr))}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:16px;overflow:hidden;display:flex;flex-direction:column}
+.card img{width:100%;aspect-ratio:500/478;object-fit:contain;background:#fff;display:block}
+.info{padding:12px 14px;display:flex;flex-direction:column;gap:10px;flex:1}
+.name{font-weight:600;font-size:16px}
+.price{font-family:"JetBrains Mono",monospace;color:var(--muted)}
+.row{display:flex;gap:8px;margin-top:auto}
+.pay{flex:1;padding:14px 8px;border-radius:12px;font-weight:700;font-size:15px;text-decoration:none;text-align:center;display:block}
+.btc{background:var(--orange);color:#111}
+.fiat{background:#e9ebee;color:#111}
+.qty{display:flex;align-items:center;justify-content:space-between;margin-top:auto;background:#0f1216;border-radius:12px;padding:4px}
+.qty button{width:52px;height:46px;border-radius:10px;background:#232830;color:var(--text);font-size:24px;font-weight:700}
+.qty output{font-family:"JetBrains Mono",monospace;font-size:20px;min-width:40px;text-align:center}
+.card.on{border-color:var(--teal)}
+
+/* cart bar */
+.bar{position:fixed;left:0;right:0;bottom:0;background:#101317;border-top:1px solid var(--line);padding:12px 16px calc(12px + env(safe-area-inset-bottom))}
+.bar .in{max-width:1100px;margin:0 auto;display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.total{font-family:"JetBrains Mono",monospace;font-size:26px;margin-right:auto}
+.total small{display:block;font-family:"Instrument Sans",sans-serif;font-size:13px;color:var(--muted)}
+.bar .pay{flex:0 1 200px;padding:16px 10px;font-size:16px}
+.bar .clear{background:none;color:var(--muted);padding:10px}
+.pay:disabled{opacity:.35}
+.msg{color:#ff8a8a;font-size:14px;width:100%}
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <h1>TABConf 8 <span>Swag</span></h1>
+    <button class="back" id="back" hidden>&larr; Back</button>
+  </header>
+
+  <section id="v-home" class="home">
+    <button class="big one" data-go="one"><b>Buy 1 item</b><small>Pick it, pay with bitcoin or card</small></button>
+    <button class="big many" data-go="cart"><b>Buy multiple items</b><small>Build a cart, pay the total</small></button>
+  </section>
+
+  <section id="v-one" hidden><div class="grid" id="g-one"></div></section>
+  <section id="v-cart" hidden><div class="grid" id="g-cart"></div></section>
+</main>
+
+<div class="bar" id="bar" hidden>
+  <div class="in">
+    <div class="total"><small id="count">0 items</small>$<span id="sum">0</span></div>
+    <button class="clear" id="clear">Clear</button>
+    <button class="pay btc" id="cart-btc" disabled>Pay with bitcoin</button>
+    <button class="pay fiat" id="cart-fiat" disabled>Pay with card</button>
+    <div class="msg" id="msg" hidden></div>
+  </div>
+</div>
+
+<script>
+// Prices are fixed here and must match the OpenNode and Stripe links.
+const ITEMS = [
+  {id:"wht",  name:"White shirt, orange front", price:35, img:"white_tshirt_orangefront_tabswag.png",
+   btc:"https://checkout.opennode.com/p/f60120bc-02c3-4f29-9d01-c8ffdfc498e9", fiat:"https://buy.stripe.com/dRmeVd9lO8C06CjeYidQQ0e"},
+  {id:"hdo",  name:"Hoodie, orange back", price:80, img:"hoddie_orangeback_tabswag.png",
+   btc:"https://checkout.opennode.com/p/287f4120-eeb4-49b2-8c71-483c82a13e8a", fiat:"https://buy.stripe.com/7sY3cv2Xq2dC3q73fAdQQ0f"},
+  {id:"hdt",  name:"Hoodie, teal back", price:80, img:"hoodie_tealback_tabswag.png",
+   btc:"https://checkout.opennode.com/p/312ab1f3-f000-4ae3-ad54-990cd179f2ae", fiat:"https://buy.stripe.com/00weVdfKcf0oaSz5nIdQQ0g"},
+  {id:"blkt", name:"Black shirt, teal back", price:40, img:"black_tshirt_tealback_tabswag.png",
+   btc:"https://checkout.opennode.com/p/93474df5-d945-467f-987d-2b3c5b43b079", fiat:"https://buy.stripe.com/00w9AT9lOg4sbWD3fAdQQ0h"},
+  {id:"blko", name:"Black shirt, orange back", price:40, img:"black_tshirt_orangeback_tabswag.png",
+   btc:"https://checkout.opennode.com/p/d30cdd21-4ece-402f-aab3-67a56fb29322", fiat:"https://buy.stripe.com/6oU8wPgOg4lKf8P9DYdQQ0i"},
+  {id:"hat",  name:"Hat, open source all the things", price:40, img:"hat_tabswag.png",
+   btc:"https://checkout.opennode.com/p/5e577cba-da50-4cbd-a1aa-3bf646de80d7", fiat:"https://buy.stripe.com/4gM4gzbtWcSg3q703odQQ0j"},
+  {id:"org",  name:"Orange shirt", price:25, img:"orange_shirt_tabswag.png",
+   btc:"https://checkout.opennode.com/p/757624a2-eeb9-4a7b-a96e-7f0717d7fac9", fiat:"https://buy.stripe.com/14A4gzdC4f0obWD8zUdQQ0l"},
+];
+
+// Cart checkout. Bitcoin: OpenNode "TAB SWAG" template with an open amount; the page
+// creates the checkout at the exact total through the same public call OpenNode's own
+// form uses. Card: a Stripe "customers choose what to pay" link, total passed as
+// prefilled_amount. Leave STRIPE_CART empty until that link exists.
+const OPENNODE_CART = "35cba2b1-d407-4c1f-b6b4-ab2a82b9ea42";
+const STRIPE_CART = "";
+
+const IMG = "/assets/swag/";
+const $ = s => document.querySelector(s);
+const cart = {};
+
+function cardHTML(it, mode){
+  const top = `<img src="${IMG}${it.img}" alt="${it.name}" loading="lazy">
+    <div class="info"><div class="name">${it.name}</div><div class="price">$${it.price}</div>`;
+  if (mode === "one") return `<div class="card">${top}
+    <div class="row"><a class="pay btc" href="${it.btc}">Bitcoin</a><a class="pay fiat" href="${it.fiat}">Card</a></div></div></div>`;
+  return `<div class="card" id="c-${it.id}">${top}
+    <div class="qty"><button data-d="-1" data-id="${it.id}" aria-label="Remove one">&minus;</button>
+    <output id="q-${it.id}">0</output>
+    <button data-d="1" data-id="${it.id}" aria-label="Add one">+</button></div></div></div>`;
+}
+$("#g-one").innerHTML = ITEMS.map(i => cardHTML(i, "one")).join("");
+$("#g-cart").innerHTML = ITEMS.map(i => cardHTML(i, "cart")).join("");
+
+function totals(){
+  let n = 0, sum = 0;
+  for (const it of ITEMS){ const q = cart[it.id] || 0; n += q; sum += q * it.price; }
+  return {n, sum};
+}
+function render(){
+  const {n, sum} = totals();
+  for (const it of ITEMS){
+    const q = cart[it.id] || 0;
+    $("#q-" + it.id).textContent = q;
+    $("#c-" + it.id).classList.toggle("on", q > 0);
+  }
+  $("#sum").textContent = sum;
+  $("#count").textContent = n + (n === 1 ? " item" : " items");
+  $("#cart-btc").disabled = n === 0;
+  $("#cart-fiat").disabled = n === 0 || !STRIPE_CART;
+  $("#msg").hidden = true;
+}
+$("#g-cart").addEventListener("click", e => {
+  const b = e.target.closest("button[data-id]"); if (!b) return;
+  const id = b.dataset.id, q = Math.max(0, (cart[id] || 0) + Number(b.dataset.d));
+  q ? cart[id] = q : delete cart[id];
+  render();
+});
+$("#clear").onclick = () => { for (const k in cart) delete cart[k]; render(); };
+
+// Short code of the cart, e.g. "hdo2-hat1", kept on the payment for the record.
+const ref = () => ITEMS.filter(i => cart[i.id]).map(i => i.id + cart[i.id]).join("-");
+
+$("#cart-btc").onclick = async () => {
+  const {sum} = totals(); if (!sum) return;
+  const btn = $("#cart-btc"); btn.disabled = true; btn.textContent = "Creating...";
+  try {
+    const r = await fetch("https://api.opennode.com/preset/" + OPENNODE_CART, {
+      method: "POST", headers: {"Content-Type": "application/json"},
+      body: JSON.stringify({metadata: {amount: sum}, price: sum, currency: "usd"})
+    });
+    const j = await r.json();
+    if (!r.ok || !j.data || !j.data.id) throw new Error((j && j.message) || r.status);
+    location.href = "https://checkout.opennode.com/" + j.data.id;
+  } catch (err) {
+    $("#msg").textContent = "Bitcoin checkout failed (" + err.message + "). Opening the swag page: type $" + sum + " as the amount.";
+    $("#msg").hidden = false;
+    setTimeout(() => location.href = "https://checkout.opennode.com/p/" + OPENNODE_CART, 2500);
+  } finally { btn.textContent = "Pay with bitcoin"; btn.disabled = false; }
+};
+$("#cart-fiat").onclick = () => {
+  const {sum} = totals(); if (!sum || !STRIPE_CART) return;
+  const u = new URL(STRIPE_CART);
+  u.searchParams.set("prefilled_amount", String(sum * 100));
+  u.searchParams.set("client_reference_id", "swag-" + ref());
+  location.href = u.toString();
+};
+
+// Views: #one, #cart, or home.
+function show(){
+  const v = location.hash.slice(1);
+  $("#v-home").hidden = !!v;
+  $("#v-one").hidden = v !== "one";
+  $("#v-cart").hidden = v !== "cart";
+  $("#bar").hidden = v !== "cart";
+  $("#back").hidden = !v;
+  window.scrollTo(0, 0);
+}
+document.querySelectorAll("[data-go]").forEach(b => b.onclick = () => location.hash = b.dataset.go);
+$("#back").onclick = () => { history.replaceState(null, "", location.pathname); show(); };
+addEventListener("hashchange", show);
+render(); show();
+</script>
+</body>
+</html>
