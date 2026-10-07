@@ -91,20 +91,20 @@ button{font:inherit;cursor:pointer;border:0}
 <script>
 // Prices are fixed here and must match the OpenNode and Stripe links.
 const ITEMS = [
-  {id:"wht",  name:"White shirt, orange front", price:35, img:"white_tshirt_orangefront_tabswag.png",
-   btc:"https://checkout.opennode.com/p/f60120bc-02c3-4f29-9d01-c8ffdfc498e9", fiat:"https://buy.stripe.com/dRmeVd9lO8C06CjeYidQQ0e"},
   {id:"hdo",  name:"Hoodie, orange back", price:80, img:"hoddie_orangeback_tabswag.png",
    btc:"https://checkout.opennode.com/p/287f4120-eeb4-49b2-8c71-483c82a13e8a", fiat:"https://buy.stripe.com/7sY3cv2Xq2dC3q73fAdQQ0f"},
   {id:"hdt",  name:"Hoodie, teal back", price:80, img:"hoodie_tealback_tabswag.png",
    btc:"https://checkout.opennode.com/p/312ab1f3-f000-4ae3-ad54-990cd179f2ae", fiat:"https://buy.stripe.com/00weVdfKcf0oaSz5nIdQQ0g"},
-  {id:"blkt", name:"Black shirt, teal back", price:40, img:"black_tshirt_tealback_tabswag.png",
-   btc:"https://checkout.opennode.com/p/93474df5-d945-467f-987d-2b3c5b43b079", fiat:"https://buy.stripe.com/00w9AT9lOg4sbWD3fAdQQ0h"},
   {id:"blko", name:"Black shirt, orange back", price:40, img:"black_tshirt_orangeback_tabswag.png",
    btc:"https://checkout.opennode.com/p/d30cdd21-4ece-402f-aab3-67a56fb29322", fiat:"https://buy.stripe.com/6oU8wPgOg4lKf8P9DYdQQ0i"},
-  {id:"hat",  name:"Hat, open source all the things", price:40, img:"hat_tabswag.png",
-   btc:"https://checkout.opennode.com/p/5e577cba-da50-4cbd-a1aa-3bf646de80d7", fiat:"https://buy.stripe.com/4gM4gzbtWcSg3q703odQQ0j"},
+  {id:"blkt", name:"Black shirt, teal back", price:40, img:"black_tshirt_tealback_tabswag.png",
+   btc:"https://checkout.opennode.com/p/93474df5-d945-467f-987d-2b3c5b43b079", fiat:"https://buy.stripe.com/00w9AT9lOg4sbWD3fAdQQ0h"},
+  {id:"wht",  name:"White shirt, orange front", price:35, img:"white_tshirt_orangefront_tabswag.png",
+   btc:"https://checkout.opennode.com/p/f60120bc-02c3-4f29-9d01-c8ffdfc498e9", fiat:"https://buy.stripe.com/dRmeVd9lO8C06CjeYidQQ0e"},
   {id:"org",  name:"Orange shirt", price:25, img:"orange_shirt_tabswag.png",
    btc:"https://checkout.opennode.com/p/757624a2-eeb9-4a7b-a96e-7f0717d7fac9", fiat:"https://buy.stripe.com/14A4gzdC4f0obWD8zUdQQ0l"},
+  {id:"hat",  name:"Hat, open source all the things", price:40, img:"hat_tabswag.png",
+   btc:"https://checkout.opennode.com/p/5e577cba-da50-4cbd-a1aa-3bf646de80d7", fiat:"https://buy.stripe.com/4gM4gzbtWcSg3q703odQQ0j"},
 ];
 
 // Cart checkout. Bitcoin: OpenNode "TAB SWAG" template with an open amount; the page
