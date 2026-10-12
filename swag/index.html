@@ -105,6 +105,8 @@ const ITEMS = [
    btc:"https://checkout.opennode.com/p/757624a2-eeb9-4a7b-a96e-7f0717d7fac9", fiat:"https://buy.stripe.com/14A4gzdC4f0obWD8zUdQQ0l"},
   {id:"hat",  name:"Hat, open source all the things", price:40, img:"hat_tabswag.png",
    btc:"https://checkout.opennode.com/p/5e577cba-da50-4cbd-a1aa-3bf646de80d7", fiat:"https://buy.stripe.com/4gM4gzbtWcSg3q703odQQ0j"},
+  {id:"pst",  name:"Poster, 20x30, numbered", price:55, img:"poster_tabswag.jpg",
+   btc:"", fiat:""},
 ];
 
 // Cart checkout. Bitcoin: OpenNode "TAB SWAG" template with an open amount; the page
@@ -122,13 +124,13 @@ function cardHTML(it, mode){
   const top = `<img src="${IMG}${it.img}" alt="${it.name}" loading="lazy">
     <div class="info"><div class="name">${it.name}</div><div class="price">$${it.price}</div>`;
   if (mode === "one") return `<div class="card">${top}
-    <div class="row"><a class="pay btc" href="${it.btc}">Bitcoin</a><a class="pay fiat" href="${it.fiat}">Card</a></div></div></div>`;
+    <div class="row">${it.btc ? `<a class="pay btc" href="${it.btc}">Bitcoin</a>` : ""}${it.fiat ? `<a class="pay fiat" href="${it.fiat}">Card</a>` : ""}</div></div></div>`;
   return `<div class="card" id="c-${it.id}">${top}
     <div class="qty"><button data-d="-1" data-id="${it.id}" aria-label="Remove one">&minus;</button>
     <output id="q-${it.id}">0</output>
     <button data-d="1" data-id="${it.id}" aria-label="Add one">+</button></div></div></div>`;
 }
-$("#g-one").innerHTML = ITEMS.map(i => cardHTML(i, "one")).join("");
+$("#g-one").innerHTML = ITEMS.filter(i => i.btc || i.fiat).map(i => cardHTML(i, "one")).join("");
 $("#g-cart").innerHTML = ITEMS.map(i => cardHTML(i, "cart")).join("");
 
 function totals(){
