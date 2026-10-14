@@ -107,6 +107,9 @@ const ITEMS = [
    btc:"https://checkout.opennode.com/p/5e577cba-da50-4cbd-a1aa-3bf646de80d7", fiat:"https://buy.stripe.com/4gM4gzbtWcSg3q703odQQ0j"},
   {id:"pst",  name:"Poster, 20x30, numbered", price:50, img:"poster_tabswag.jpg",
    btc:"https://checkout.opennode.com/p/b9a40dfb-9e8a-48f9-85ed-898f2caddbfb", fiat:"https://buy.stripe.com/7sY5kDdC47xW8KreYidQQ0m"},
+  // Open amount, bitcoin only, single item only: kept out of the cart.
+  {id:"wrb",  name:"Wristband replacement, mempool.space after party", price:null, img:"wristband_tabswag.jpg", one:true,
+   btc:"https://checkout.opennode.com/p/28a88099-26bb-46c6-923a-5825a3714c5c"},
 ];
 
 // Cart checkout. Bitcoin: OpenNode "TAB SWAG" template with an open amount; the page
@@ -122,7 +125,7 @@ const cart = {};
 
 function cardHTML(it, mode){
   const top = `<img src="${IMG}${it.img}" alt="${it.name}" loading="lazy">
-    <div class="info"><div class="name">${it.name}</div><div class="price">$${it.price}</div>`;
+    <div class="info"><div class="name">${it.name}</div><div class="price">${it.price == null ? "Bitcoin only" : "$" + it.price}</div>`;
   if (mode === "one") return `<div class="card">${top}
     <div class="row">${it.btc ? `<a class="pay btc" href="${it.btc}">Bitcoin</a>` : ""}${it.fiat ? `<a class="pay fiat" href="${it.fiat}">Card</a>` : ""}</div></div></div>`;
   return `<div class="card" id="c-${it.id}">${top}
@@ -131,16 +134,17 @@ function cardHTML(it, mode){
     <button data-d="1" data-id="${it.id}" aria-label="Add one">+</button></div></div></div>`;
 }
 $("#g-one").innerHTML = ITEMS.filter(i => i.btc || i.fiat).map(i => cardHTML(i, "one")).join("");
-$("#g-cart").innerHTML = ITEMS.map(i => cardHTML(i, "cart")).join("");
+const CART = ITEMS.filter(i => !i.one);
+$("#g-cart").innerHTML = CART.map(i => cardHTML(i, "cart")).join("");
 
 function totals(){
   let n = 0, sum = 0;
-  for (const it of ITEMS){ const q = cart[it.id] || 0; n += q; sum += q * it.price; }
+  for (const it of CART){ const q = cart[it.id] || 0; n += q; sum += q * it.price; }
   return {n, sum};
 }
 function render(){
   const {n, sum} = totals();
-  for (const it of ITEMS){
+  for (const it of CART){
     const q = cart[it.id] || 0;
     $("#q-" + it.id).textContent = q;
     $("#c-" + it.id).classList.toggle("on", q > 0);
@@ -160,7 +164,7 @@ $("#g-cart").addEventListener("click", e => {
 $("#clear").onclick = () => { for (const k in cart) delete cart[k]; render(); };
 
 // Short code of the cart, e.g. "hdo2-hat1", kept on the payment for the record.
-const ref = () => ITEMS.filter(i => cart[i.id]).map(i => i.id + cart[i.id]).join("-");
+const ref = () => CART.filter(i => cart[i.id]).map(i => i.id + cart[i.id]).join("-");
 
 $("#cart-btc").onclick = async () => {
   const {sum} = totals(); if (!sum) return;
